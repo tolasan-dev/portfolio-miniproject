@@ -1,0 +1,45 @@
+[data-bs-theme="light"] {
+  --bs-body-bg: #edfff6;
+  --bs-body-color: #1c1917;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+body {
+  font-family: "Poppins";
+}
+[data-bs-theme="dark"] body {
+  background: linear-gradient(135deg, #0b150e, #101d0d, #0e1315);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: #ffff;
+}
+
+.navbar {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid #12d833;
+}
+.btn-mode {
+  padding: 10px 20px;
+}
+span {
+  color: #12ef37;
+}
+.btn {
+  background-color: #12d833;
+  border: none;
+}
+.image-hero {
+  width: 100%;
+  height: 100%;
+}
+.image-hero img {
+  width: 500px;
+}
