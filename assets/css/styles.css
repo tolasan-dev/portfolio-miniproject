@@ -20,6 +20,7 @@ body {
 }
 [data-bs-theme="dark"] body {
   background: linear-gradient(135deg, #0b150e, #101d0d, #0e1315);
+  /* background: #1c1917; */
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
   color: #ffff;
@@ -162,7 +163,7 @@ span {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   border: 1px solid var(--bs-border-color);
-  color: ;
+  
 }
 /* - ------ section counter ---------*/
 
