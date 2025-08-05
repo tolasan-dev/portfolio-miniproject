@@ -22,52 +22,73 @@
   <body>
     <header class="mt-4">
       <div class="container">
-        <nav class="navbar navbar-expand-lg px-3 p-2">
-          <!-- Logo (always on left) -->
-          <a class="navbar-brand" href="#">
-            <!-- <img src="/assets/img/code.png" alt="Logo" style="height: 40px" /> -->
-            Jacob
-          </a>
+        <nav class="navbar navbar-expand-lg px-3 py-2 align-items-center">
+          <!-- Logo -->
+          <a class="navbar-brand fw-bold" href="#">Jacob</a>
 
-          <!-- Toggler for mobile -->
-          <button
-            class="navbar-toggler ms-auto"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+          <!-- Theme toggle + navbar toggler side-by-side on mobile -->
+          <div class="d-flex d-lg-none ms-auto gap-2">
+            <!-- Theme toggle button (mobile only) -->
+            <button class="btn btn-theme-toggle" id="themeToggleBtnMobile">
+              <i id="themeIconMobile" class="fas fa-moon"></i>
+            </button>
+            <!-- Navbar toggler -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <!-- Collapsible content -->
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarNav"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!-- Collapsible navbar content -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <!-- Centered menu -->
-            <ul class="navbar-nav mx-auto">
+            <!-- Center nav items -->
+            <ul class="navbar-nav mx-lg-auto text-center">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link active hvr-underline-from-center" href="#"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link hvr-underline-from-center" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link hvr-underline-from-center" href="#"
+                  >Projects</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
+                <a class="nav-link hvr-underline-from-center" href="#"
+                  >Skills</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Resume</a>
+                <a class="nav-link hvr-underline-from-center" href="#"
+                  >Resume</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link hvr-underline-from-center" href="#"
+                  >Contact</a
+                >
               </li>
             </ul>
 
-            <!-- Optional right-side button -->
-            <button class="btn btn-mode" id="themeToggleBtn">Mode</button>
+            <!-- Theme toggle (for desktop only) -->
+            <div class="d-none d-lg-block">
+              <button class="btn btn-theme-toggle" id="themeToggleBtnDesktop">
+                <i id="themeIconDesktop" class="fas fa-moon"></i>
+              </button>
+            </div>
           </div>
         </nav>
       </div>
@@ -88,7 +109,39 @@
                   I’m a passionate web developer building modern and responsive
                   websites.
                 </p>
-                <a href="#contact" class="btn btn-lg text-light">Resume Me</a>
+                <a
+                  href="#contact"
+                  class="btn btn-lg btn-primary text-light mb-4"
+                  >Resume Me</a
+                >
+
+                <!-- Social Icons -->
+                <div class="social-icons d-flex justify-content-center gap-3">
+                  <a
+                    href="https://github.com/yourusername"
+                    target="_blank"
+                    class="icon github"
+                    title="GitHub"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/yourusername"
+                    target="_blank"
+                    class="icon linkedin"
+                    title="LinkedIn"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a
+                    href="https://twitter.com/yourusername"
+                    target="_blank"
+                    class="icon twitter"
+                    title="Twitter/X"
+                  >
+                    <i class="fab fa-x-twitter"></i>
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -96,10 +149,98 @@
             <div class="col-12 col-md-6 text-center">
               <div class="image-hero">
                 <img
+                  src="assets/img/jacob.png"
+                  alt="Jacob Thornton"
+                  class="img-fluid rounded-3"
+                />
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Counter Section -->
+      <section class="py-5 count">
+        <div class="row text-center g-4">
+          <div class="col-6 col-md-3">
+            <div class="counter-box">
+              <h2>150</h2>
+              <p>Projects</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="counter-box">
+              <h2>75</h2>
+              <p>Clients</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="counter-box">
+              <h2>300</h2>
+              <p>Followers</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="counter-box">
+              <h2>25</h2>
+              <p>Awards</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section counter -->
+      <!-- end section counter -->
+      <section id="about" class="about-section py-5">
+        <div class="container">
+          <div class="row align-items-center gy-4">
+            <!-- Left Column: Dots Grid + Image -->
+            <div
+              class="col-12 col-lg-6"
+              data-aos-duration="700"
+              data-aos="fade-right"
+            >
+              <div class="dots-grid d-none d-md-block" aria-hidden="true">
+                <!-- Shortened dots, see note below -->
+
+                <!-- ... -->
+              </div>
+
+              <div class="image-hero text-center text-lg-start">
+                <img
                   src="assets/img/jacob-thornton.jpg"
                   alt="Jacob Thornton"
                   class="img-fluid rounded-3"
                 />
+              </div>
+            </div>
+
+            <!-- Right Column: Text Content -->
+            <div
+              class="col-12 col-lg-6"
+              data-aos-duration="700"
+              data-aos="fade-left"
+            >
+              <div class="section-header text-center text-lg-start">
+                <h2 class="section-title text-light">
+                  Creative and detail-oriented
+                  <span class="text-green">Junior Web Designer</span>
+                </h2>
+              </div>
+              <p class="section-description text-center text-lg-start">
+                with a strong interest in building responsive, user-friendly
+                websites. Skilled in front-end technologies like HTML, CSS, and
+                React, with hands-on experience designing and developing a fully
+                functional blog platform. Adept at turning ideas into
+                interactive layouts and working collaboratively on real-world
+                projects. Eager to contribute to a dynamic team and grow in the
+                field of web and UI/UX design.
+              </p>
+              <div class="text-center text-lg-start">
+                <a href="#" class="btn btn-green">
+                  Show CV
+                  <i class="fa-solid fa-circle-right ps-1 p-2"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -111,29 +252,40 @@
   <!-- Theme Toggle Script -->
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <!-- swiper library -->
-  <!-- Initialize Swiper -->
   <script>
-    const swiper = new Swiper(".swiper", {
-      // Optional parameters
-      loop: true, // enable continuous loop mode
-      autoplay: {
-        delay: 3000, // time between slides in ms (3 seconds)
-        disableOnInteraction: false, // keep autoplay even after user interacts
-      },
+    const swiper = new Swiper(".hori", {
+      slidesPerView: "auto",
+      spaceBetween: 16,
+      grabCursor: true,
+      freeMode: true,
     });
   </script>
   <script>
-    const btn = document.getElementById("themeToggleBtn");
     const htmlEl = document.documentElement;
+    const iconMobile = document.getElementById("themeIconMobile");
+    const iconDesktop = document.getElementById("themeIconDesktop");
+    const btnMobile = document.getElementById("themeToggleBtnMobile");
+    const btnDesktop = document.getElementById("themeToggleBtnDesktop");
 
     const saved = localStorage.getItem("bsTheme");
-    if (saved) htmlEl.setAttribute("data-bs-theme", saved);
+    if (saved) {
+      htmlEl.setAttribute("data-bs-theme", saved);
+      const iconClass = saved === "dark" ? "fas fa-moon" : "fas fa-sun";
+      iconMobile.className = iconClass;
+      iconDesktop.className = iconClass;
+    }
 
-    btn.addEventListener("click", () => {
+    function toggleTheme() {
       const current = htmlEl.getAttribute("data-bs-theme");
       const next = current === "light" ? "dark" : "light";
       htmlEl.setAttribute("data-bs-theme", next);
       localStorage.setItem("bsTheme", next);
-    });
+      const iconClass = next === "dark" ? "fas fa-moon" : "fas fa-sun";
+      iconMobile.className = iconClass;
+      iconDesktop.className = iconClass;
+    }
+
+    btnMobile.addEventListener("click", toggleTheme);
+    btnDesktop.addEventListener("click", toggleTheme);
   </script>
 </html>

@@ -1,6 +1,17 @@
 [data-bs-theme="light"] {
   --bs-body-bg: #edfff6;
   --bs-body-color: #1c1917;
+  --bs-border-color: #12d833;
+  --bs-nav-link-hover: #12d833;
+  --bs-primary: #12d833;
+  --bg-hover: #00c950;
+}
+[data-bs-theme="dark"] {
+  --bs-body-color: #f1f1f1;
+  --bs-border-color: #12d833;
+  --bs-nav-link-hover: #12d833;
+  --bs-primary: #12d833;
+  --bg-hover: #00a63e;
 }
 @font-face {
   font-family: "Poppins";
@@ -11,14 +22,14 @@ body {
   font-family: "Poppins";
 }
 [data-bs-theme="dark"] body {
-  background: linear-gradient(135deg, #0b150e, #101d0d, #0e1315);
+  background: linear-gradient(135deg, #0d2515, #17201a);
+  /* background: #1c1917; */
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
   color: #ffff;
 }
-
+/*----------------- navbar------------- */
 .navbar {
-  /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -26,20 +37,142 @@ body {
   border-radius: 10px;
   border: 1px solid #12d833;
 }
+.navbar .navbar-nav .nav-item .active {
+  color: #12d833 !important;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: var(--bs-body-color);
+}
 .btn-mode {
-  padding: 10px 20px;
+  padding: 10px;
+}
+.btn:hover {
+  background-color: var(--bg-hover);
 }
 span {
-  color: #12ef37;
+  color: #12d833;
 }
 .btn {
   background-color: #12d833;
   border: none;
 }
+
+/*----------------- hover effect on nav-link ------------------ */
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: var(--bs-nav-link-hover);
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+/*----------- end of nav-link effect ---------------- */
 .image-hero {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 .image-hero img {
   width: 500px;
+  background-color: var(--bs-primary);
+}
+.btn-theme-toggle {
+  color: var(--bs-body-color);
+  border: 1px solid var(--bs-border-color);
+  transition: background-color 0.3s, color 0.3s;
+  padding: 0.5rem 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Social icons container */
+
+/* Icon link style */
+.social-icons .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--bs-border-color);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon {
+  border: 1px solid var(--bs-border-color);
+  color: var(--bs-body-color);
+}
+
+.social-icons .icon:hover {
+  transform: scale(1.15);
+  opacity: 0.9;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid #12d833;
+}
+.card-tool {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid #12d833;
+}
+
+.count {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.123);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+/* - ------ section counter ---------*/
+
+.counter-box h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--bs-border-color);
+}
+
+.counter-box p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: var(--bs-body-color);
 }
