@@ -11,7 +11,7 @@
   height: 100vh;
   top: 0;
   left: 0;
-  background: #4CB8B6;
+  background: rgba(0, 0, 0, 0.95);
   overflow: hidden;
 
 }
@@ -30,7 +30,7 @@
 }
 
 .ball:nth-child(even) {
-    color: #FF6F61;
+    color: #08D665;
 }
 
 /* Using a custom attribute for variability */
@@ -39,6 +39,7 @@
   left: 88%;
   animation-duration: 40s;
   animation-delay: -3s;
+  color: #9cdba6;
   transform-origin: 16vw -2vh;
   box-shadow: 40vmin 0 5.703076368487546vmin currentColor;
 }
