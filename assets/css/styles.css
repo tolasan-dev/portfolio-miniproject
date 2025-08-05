@@ -13,6 +13,7 @@
   --bs-primary: #12d833;
   --bg-hover: #00a63e;
 }
+
 @font-face {
   font-family: "Poppins";
   src: url(../fonts/Poppins-Regular.ttf);
@@ -29,6 +30,14 @@ body {
   color: #ffff;
 }
 /*----------------- navbar------------- */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  z-index: 1000;
+}
 .navbar {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -52,11 +61,63 @@ body {
 span {
   color: #12d833;
 }
-.btn {
+/* .btn {
   background-color: #12d833;
   border: none;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
 }
 
+.section-subtitle {
+  color: var(--bs-body-color);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.section-title {
+  color: var(--bs-body-color);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.section-description {
+  color: var(--bs-body-color);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.btn-green:hover {
+  background-color: transparent;
+  border-color: var(--bs-primary);
+  color: var(--bs-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(35, 201, 113, 0.3);
+}
+
+.btn-green {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-border-color);
+  color: var(--bs-body-color);
+  font-weight: 600;
+  font-family: var(--bs-primary);
+  padding: 12px 30px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
 /*----------------- hover effect on nav-link ------------------ */
 /* Underline From Center */
 .hvr-underline-from-center {
@@ -179,20 +240,21 @@ span {
 
 /* about */
 .image-container {
-  width: 450px;
+  width: 400px;
   position: relative;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .dots-grid {
   position: absolute;
-  bottom: -13%;
-  left: -8%;
+  left: 100px;
   display: grid;
   grid-template-columns: repeat(12, 6px);
   grid-template-rows: repeat(12, 6px);
   gap: 20px 20px;
   opacity: 1;
+  transform: translateY(178px);
 }
 
 .dot {
