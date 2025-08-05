@@ -139,9 +139,9 @@ header {
   z-index: -1;
   left: 51%;
   right: 51%;
-  bottom: 0;
+  bottom: 5px;
   background: var(--bs-nav-link-hover);
-  height: 4px;
+  height: 2px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
   -webkit-transition-duration: 0.3s;
