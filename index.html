@@ -1,785 +1,596 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio-G12</title>
-    <!-- link framework csss bootstrap lasted version -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css" />
-    <!-- link style css  -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <!-- link font awesome icon -->
 
-    <!-- link for library swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
-    <!-- link aos library javascript  -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header class="mt-4">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg px-3 py-2 align-items-center">
-          <!-- Logo -->
-          <a class="navbar-brand fw-bolder fs-4" href="#">Jacob</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio-G12</title>
+  <!-- link framework csss bootstrap lasted version -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <!-- link style css  -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <!-- link font awesome icon -->
 
-          <!-- Theme toggle + navbar toggler side-by-side on mobile -->
-          <div class="d-flex d-lg-none ms-auto gap-2">
-            <!-- Theme toggle button (mobile only) -->
-            <button class="btn btn-theme-toggle" id="themeToggleBtnMobile">
-              <i id="themeIconMobile" class="fas fa-moon"></i>
-            </button>
-            <!-- Navbar toggler -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
+  <!-- link for library swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!-- link aos library javascript  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+</head>
+
+<body>
+  <header class="mt-4">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg px-3 py-2 align-items-center">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bolder fs-4" href="#">Jacob</a>
+
+        <!-- Theme toggle + navbar toggler side-by-side on mobile -->
+        <div class="d-flex d-lg-none ms-auto gap-2">
+          <!-- Theme toggle button (mobile only) -->
+          <button class="btn btn-theme-toggle" id="themeToggleBtnMobile">
+            <i id="themeIconMobile" class="fas fa-moon"></i>
+          </button>
+          <!-- Navbar toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+          <!-- Center nav items -->
+          <ul class="navbar-nav mx-lg-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link active hvr-underline-from-center" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hvr-underline-from-center" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hvr-underline-from-center" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hvr-underline-from-center" href="#">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hvr-underline-from-center" href="#">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hvr-underline-from-center" href="#">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Theme toggle (for desktop only) -->
+          <div class="d-none d-lg-block">
+            <button class="btn btn-theme-toggle" id="themeToggleBtnDesktop">
+              <i id="themeIconDesktop" class="fas fa-moon"></i>
             </button>
           </div>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-          <!-- Collapsible content -->
-          <div
-            class="collapse navbar-collapse justify-content-between"
-            id="navbarNav"
-          >
-            <!-- Center nav items -->
-            <ul class="navbar-nav mx-lg-auto text-center">
-              <li class="nav-item">
-                <a class="nav-link active hvr-underline-from-center" href="#"
-                  >Home</a
-                >
+  <main>
+    <!-- <div class="hero-banner"></div> -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Text Section -->
+          <div class="col-12 col-lg-6 mb-lg-0">
+            <div class="hero-banner text-center text-lg-start p-5" data-aos="fade-right" data-aos-duration="1000">
+              <h1 class="display-5 fw-bold mb-3">
+                Hello, I'm <span class="title-name">Jacob Thorn</span>
+              </h1>
+              <p class="lead mb-4">
+                I’m a passionate web developer building modern and responsive
+                websites.
+              </p>
+
+              <div
+                class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start align-items-center gap-3">
+                <a href="#contact" class="btn">
+                  Resume<i class="fa-solid fa-circle-right ps-3"></i>
+                </a>
+
+                <div class="social-icons d-flex gap-3">
+                  <a href="https://github.com/yourusername" target="_blank" class="icon github" title="GitHub">
+                    <i class="fab fa-github fa-lg"></i>
+                  </a>
+                  <a href="https://linkedin.com/in/yourusername" target="_blank" class="icon linkedin" title="LinkedIn">
+                    <i class="fab fa-linkedin-in fa-lg"></i>
+                  </a>
+                  <a href="https://twitter.com/yourusername" target="_blank" class="icon twitter" title="Twitter/X">
+                    <i class="fab fa-x-twitter fa-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Section -->
+          <div class="col-12 col-lg-6">
+            <div class="text-center text-lg-end mt-5 py-5">
+              <div class="image-hero">
+                <img src="assets/img/jacob.png" alt="Jacob Thorn" class="img-fluid" data-aos="fade-left"
+                  data-aos-duration="800" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section class="py-5 count">
+      <div class="row text-center g-4">
+        <div class="col-6 col-md-3">
+          <div class="counter-box">
+            <h2 data-count="150" class="counter">0</h2>
+            <span>+</span>
+            <p>Projects</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="counter-box">
+            <h2 data-count="75" class="counter">0</h2>
+            <span>+</span>
+            <p>Clients</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="counter-box">
+            <h2 data-count="300" class="counter">0</h2>
+            <span>+</span>
+            <p>Followers</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="counter-box">
+            <h2 data-count="25" class="counter">0</h2>
+            <span>+</span>
+            <p>Awards</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section counter -->
+    <!-- about section -->
+    <section id="about" class="about-section py-5">
+      <h1 class="text-center fw-bolder mb-3 py-4"><span class="title-name">About</span> Me</h1>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6 position-relative" data-aos-duration="700" data-aos="fade-right">
+            <div class="dots-grid">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+            <div class="image-container mx-0 mx-lg-2 mx-xl-5">
+              <img src="assets/img/jacob-thornton.jpg" alt="" class="img-fluid"/>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6" data-aos-duration="700" data-aos="fade-left">
+            <div class="section-header">
+              <h2 class="section-title">
+                Creative and detail-oriented
+                <span class="title-name">Junior Web Designer</span>
+              </h2>
+            </div>
+            <p class="section-description">
+              with a strong interest in building responsive, user-friendly
+              websites. Skilled in front-end technologies like HTML, CSS, and
+              React, with hands-on experience designing and developing a fully
+              functional blog platform. Adept at turning ideas into
+              interactive layouts and working collaboratively on real-world
+              projects. Eager to contribute to a dynamic team and grow in the
+              field of web and UI/UX design.
+            </p>
+            <a href="#" class="btn">Show CV<i class="fa-solid fa-circle-right ps-3"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section about me -->
+    <!-- section portfolio  -->
+    <section class="portfolio-area mt-5 mb-5">
+      <div class="portfolio-header mb-5 text-center">
+        <h1 class="portfolio-title fw-bolder">
+          <span class="px-2 px-xl-4 px-lg-3">Portfolio</span>
+        </h1>
+        <span class="portfolio-subtitle fst-italic fs-5">team & own works</span>
+      </div>
+      <div class="container p-0">
+        <div class="w-100 px-0 mx-0">
+          <div class="row px-0">
+            <!-- row 1 -->
+            <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
+              <div class="card">
+                <div class="overflow-hidden">
+                  <img class="card-img-top" src="assets/img/p-1.png" alt="Project1" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Project name 3</h5>
+                  <p class="card-text">Description about project</p>
+                  <div class="program-language mb-3">
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">tailwindCss</span>
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">vue</span>
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">java</span>
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">mysql</span>
+                  </div>
+                  <a href="#" class="btn btn-primary">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a href="#" class="btn btn-second-primary">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
+              <div class="card">
+                <div class="overflow-hidden">
+                  <img class="card-img-top" src="assets/img/p-1.png" alt="Project1" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Project name 3</h5>
+                  <p class="card-text">Description about project</p>
+                  <div class="program-language mb-3">
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">tailwindCss</span>
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">vue</span>
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">java</span>
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">mysql</span>
+                  </div>
+                  <a href="#" class="btn btn-primary">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a href="#" class="btn btn-second-primary">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
+              <div class="card">
+                <div class="overflow-hidden">
+                  <img class="card-img-top" src="assets/img/p-3.png" alt="Project1" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Project name 3</h5>
+                  <p class="card-text">Description about project</p>
+                  <div class="program-language mb-3">
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">tailwindCss</span>
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">vue</span>
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">java</span>
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">mysql</span>
+                  </div>
+                  <a href="#" class="btn btn-primary">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a href="#" class="btn btn-second-primary">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
+              <div class="card">
+                <div class="overflow-hidden">
+                  <img class="card-img-top" src="assets/img/p-5.png" alt="Project1" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Project name 3</h5>
+                  <p class="card-text">Description about project</p>
+                  <div class="program-language mb-3">
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">tailwindCss</span>
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">vue</span>
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">java</span>
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">mysql</span>
+                  </div>
+                  <a href="#" class="btn btn-primary">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a href="#" class="btn btn-second-primary">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
+              <div class="card">
+                <div class="overflow-hidden">
+                  <img class="card-img-top" src="assets/img/p-6.png" alt="Project1" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Project name 3</h5>
+                  <p class="card-text">Description about project</p>
+                  <div class="program-language mb-3">
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">tailwindCss</span>
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">vue</span>
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">java</span>
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">mysql</span>
+                  </div>
+                  <a href="#" class="btn btn-primary">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a href="#" class="btn btn-second-primary">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
+              <div class="card">
+                <div class="overflow-hidden">
+                  <img class="card-img-top" src="assets/img/p-7.png" alt="Project1" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Project name 3</h5>
+                  <p class="card-text">Description about project</p>
+                  <div class="program-language mb-3">
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">tailwindCss</span>
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">vue</span>
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">java</span>
+                    <span class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">mysql</span>
+                  </div>
+                  <a href="#" class="btn btn-primary">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a href="#" class="btn btn-second-primary">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-gradient p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-12">
+          <div class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
+            <h1 class="mb-3 mb-lg-0">Jacobs</h1>
+            <ul class="list-unstyled d-flex flex-wrap gap-3 mb-0">
+              <li>
+                <a class="nav-link active hvr-underline-from-center" href="#">Home</a>
               </li>
-              <li class="nav-item">
+              <li>
                 <a class="nav-link hvr-underline-from-center" href="#">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link hvr-underline-from-center" href="#"
-                  >Projects</a
-                >
+              <li>
+                <a class="nav-link hvr-underline-from-center" href="#">Projects</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link hvr-underline-from-center" href="#"
-                  >Skills</a
-                >
+              <li>
+                <a class="nav-link hvr-underline-from-center" href="#">Skills</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link hvr-underline-from-center" href="#"
-                  >Resume</a
-                >
+              <li>
+                <a class="nav-link hvr-underline-from-center" href="#">Resume</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link hvr-underline-from-center" href="#"
-                  >Contact</a
-                >
+              <li>
+                <a class="nav-link hvr-underline-from-center" href="#">Contact</a>
               </li>
             </ul>
-
-            <!-- Theme toggle (for desktop only) -->
-            <div class="d-none d-lg-block">
-              <button class="btn btn-theme-toggle" id="themeToggleBtnDesktop">
-                <i id="themeIconDesktop" class="fas fa-moon"></i>
-              </button>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <!-- <div class="hero-banner"></div> -->
-      <section class="py-5">
-        <div class="container">
-          <div class="row align-items-center">
-            <!-- Text Section -->
-            <div class="col-12 col-lg-6 mb-lg-0">
-              <div
-                class="hero-banner text-center text-lg-start p-5"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-              >
-                <h1 class="display-5 fw-bold mb-3">
-                  Hello, I'm <span class="title-name">Jacob Thorn</span>
-                </h1>
-                <p class="lead mb-4">
-                  I’m a passionate web developer building modern and responsive
-                  websites.
-                </p>
-
-                <div
-                  class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start align-items-center gap-3"
-                >
-                  <a href="#contact" class="btn btn-primary btn-lg">
-                    Resume Me
-                  </a>
-
-                  <div class="social-icons d-flex gap-3">
-                    <a
-                      href="https://github.com/yourusername"
-                      target="_blank"
-                      class="icon github"
-                      title="GitHub"
-                    >
-                      <i class="fab fa-github fa-lg"></i>
-                    </a>
-                    <a
-                      href="https://linkedin.com/in/yourusername"
-                      target="_blank"
-                      class="icon linkedin"
-                      title="LinkedIn"
-                    >
-                      <i class="fab fa-linkedin-in fa-lg"></i>
-                    </a>
-                    <a
-                      href="https://twitter.com/yourusername"
-                      target="_blank"
-                      class="icon twitter"
-                      title="Twitter/X"
-                    >
-                      <i class="fab fa-x-twitter fa-lg"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Image Section -->
-            <div class="col-12 col-lg-6">
-              <div class="text-center text-lg-end mt-5 py-5">
-                <div class="image-hero">
-                  <img
-                    src="assets/img/jacob.png"
-                    alt="Jacob Thorn"
-                    class="img-fluid"
-                    data-aos="fade-left"
-                    data-aos-duration="800"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Counter Section -->
-      <section class="py-5 count">
-        <div class="row text-center g-4">
-          <div class="col-6 col-md-3">
-            <div class="counter-box">
-              <h2 data-count="150" class="counter">0</h2>
-              <span>+</span>
-              <p>Projects</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="counter-box">
-              <h2 data-count="75" class="counter">0</h2>
-              <span>+</span>
-              <p>Clients</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="counter-box">
-              <h2 data-count="300" class="counter">0</h2>
-              <span>+</span>
-              <p>Followers</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="counter-box">
-              <h2 data-count="25" class="counter">0</h2>
-              <span>+</span>
-              <p>Awards</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end section counter -->
-
-      <section id="about" class="about-section py-5">
-        <h1 class="text-center fw-bolder py-4">About Me</h1>
-        <div class="container">
-          <div class="row align-items-center">
-            <div
-              class="col-12 col-md-6 col-lg-6"
-              data-aos-duration="700"
-              data-aos="fade-right"
-            >
-              <div class="dots-grid" aria-hidden="true">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div>
-              <div class="image-container position-relative mx-sm-5">
-                <img
-                  src="assets/img/jacob-thornton.jpg"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-            <div
-              class="col-12 col-md-6 col-lg-6"
-              data-aos-duration="700"
-              data-aos="fade-left"
-            >
-              <div class="section-header">
-                <h2 class="section-title">
-                  Creative and detail-oriented
-                  <span class="title-name">Junior Web Designer</span>
-                </h2>
-              </div>
-              <p class="section-description">
-                with a strong interest in building responsive, user-friendly
-                websites. Skilled in front-end technologies like HTML, CSS, and
-                React, with hands-on experience designing and developing a fully
-                functional blog platform. Adept at turning ideas into
-                interactive layouts and working collaboratively on real-world
-                projects. Eager to contribute to a dynamic team and grow in the
-                field of web and UI/UX design.
-              </p>
-              <a href="#" class="btn btn-green"
-                >Show CV<i class="fa-solid fa-circle-right ps-3"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end section about me -->
-      <!-- section portfolio  -->
-      <section class="portfolio-area mt-5 mb-5">
-        <div class="portfolio-header mb-5 text-center">
-          <h1 class="portfolio-title fw-bolder">
-            <span class="px-2 px-xl-4 px-lg-3">Portfolio</span>
-          </h1>
-          <span class="portfolio-subtitle fst-italic fs-5"
-            >team & own works</span
-          >
-        </div>
-        <div class="container p-0">
-          <div class="w-100 px-0 mx-0">
-            <div class="row px-0">
-              <!-- row 1 -->
-              <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
-                <div class="card">
-                  <div class="overflow-hidden">
-                    <img
-                      class="card-img-top"
-                      src="assets/img/p-1.png"
-                      alt="Project1"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Project name 3</h5>
-                    <p class="card-text">Description about project</p>
-                    <div class="program-language mb-3">
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >tailwindCss</span
-                      >
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >vue</span
-                      >
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >java</span
-                      >
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >mysql</span
-                      >
-                    </div>
-                    <a href="#" class="btn btn-primary">
-                      <i class="fas fa-link"></i>
-                    </a>
-                    <a href="#" class="btn btn-second-primary">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
-                <div class="card">
-                  <div class="overflow-hidden">
-                    <img
-                      class="card-img-top"
-                      src="assets/img/p-1.png"
-                      alt="Project1"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Project name 3</h5>
-                    <p class="card-text">Description about project</p>
-                    <div class="program-language mb-3">
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >tailwindCss</span
-                      >
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >vue</span
-                      >
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >java</span
-                      >
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >mysql</span
-                      >
-                    </div>
-                    <a href="#" class="btn btn-primary">
-                      <i class="fas fa-link"></i>
-                    </a>
-                    <a href="#" class="btn btn-second-primary">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
-                <div class="card">
-                  <div class="overflow-hidden">
-                    <img
-                      class="card-img-top"
-                      src="assets/img/p-3.png"
-                      alt="Project1"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Project name 3</h5>
-                    <p class="card-text">Description about project</p>
-                    <div class="program-language mb-3">
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >tailwindCss</span
-                      >
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >vue</span
-                      >
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >java</span
-                      >
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >mysql</span
-                      >
-                    </div>
-                    <a href="#" class="btn btn-primary">
-                      <i class="fas fa-link"></i>
-                    </a>
-                    <a href="#" class="btn btn-second-primary">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
-                <div class="card">
-                  <div class="overflow-hidden">
-                    <img
-                      class="card-img-top"
-                      src="assets/img/p-5.png"
-                      alt="Project1"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Project name 3</h5>
-                    <p class="card-text">Description about project</p>
-                    <div class="program-language mb-3">
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >tailwindCss</span
-                      >
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >vue</span
-                      >
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >java</span
-                      >
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >mysql</span
-                      >
-                    </div>
-                    <a href="#" class="btn btn-primary">
-                      <i class="fas fa-link"></i>
-                    </a>
-                    <a href="#" class="btn btn-second-primary">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
-                <div class="card">
-                  <div class="overflow-hidden">
-                    <img
-                      class="card-img-top"
-                      src="assets/img/p-6.png"
-                      alt="Project1"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Project name 3</h5>
-                    <p class="card-text">Description about project</p>
-                    <div class="program-language mb-3">
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >tailwindCss</span
-                      >
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >vue</span
-                      >
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >java</span
-                      >
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >mysql</span
-                      >
-                    </div>
-                    <a href="#" class="btn btn-primary">
-                      <i class="fas fa-link"></i>
-                    </a>
-                    <a href="#" class="btn btn-second-primary">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
-                <div class="card">
-                  <div class="overflow-hidden">
-                    <img
-                      class="card-img-top"
-                      src="assets/img/p-7.png"
-                      alt="Project1"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Project name 3</h5>
-                    <p class="card-text">Description about project</p>
-                    <div class="program-language mb-3">
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >tailwindCss</span
-                      >
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >vue</span
-                      >
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >java</span
-                      >
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1"
-                        >mysql</span
-                      >
-                    </div>
-                    <a href="#" class="btn btn-primary">
-                      <i class="fas fa-link"></i>
-                    </a>
-                    <a href="#" class="btn btn-second-primary">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="bg-gradient p-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-12">
-            <div
-              class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center"
-            >
-              <h1 class="mb-3 mb-lg-0">Jacobs</h1>
-              <ul class="list-unstyled d-flex flex-wrap gap-3 mb-0">
-                <li>
-                  <a class="nav-link active hvr-underline-from-center" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a class="nav-link hvr-underline-from-center" href="#"
-                    >About</a
-                  >
-                </li>
-                <li>
-                  <a class="nav-link hvr-underline-from-center" href="#"
-                    >Projects</a
-                  >
-                </li>
-                <li>
-                  <a class="nav-link hvr-underline-from-center" href="#"
-                    >Skills</a
-                  >
-                </li>
-                <li>
-                  <a class="nav-link hvr-underline-from-center" href="#"
-                    >Resume</a
-                  >
-                </li>
-                <li>
-                  <a class="nav-link hvr-underline-from-center" href="#"
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-              <div class="social-icons d-flex gap-3">
-                <a
-                  href="https://github.com/yourusername"
-                  target="_blank"
-                  class="icon github"
-                  title="GitHub"
-                >
-                  <i class="fab fa-github fa-lg"></i>
-                </a>
-                <a
-                  href="https://linkedin.com/in/yourusername"
-                  target="_blank"
-                  class="icon linkedin"
-                  title="LinkedIn"
-                >
-                  <i class="fab fa-linkedin-in fa-lg"></i>
-                </a>
-                <a
-                  href="https://twitter.com/yourusername"
-                  target="_blank"
-                  class="icon twitter"
-                  title="Twitter/X"
-                >
-                  <i class="fab fa-x-twitter fa-lg"></i>
-                </a>
-              </div>
+            <div class="social-icons d-flex gap-3">
+              <a href="https://github.com/yourusername" target="_blank" class="icon github" title="GitHub">
+                <i class="fab fa-github fa-lg"></i>
+              </a>
+              <a href="https://linkedin.com/in/yourusername" target="_blank" class="icon linkedin" title="LinkedIn">
+                <i class="fab fa-linkedin-in fa-lg"></i>
+              </a>
+              <a href="https://twitter.com/yourusername" target="_blank" class="icon twitter" title="Twitter/X">
+                <i class="fab fa-x-twitter fa-lg"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
-  <script src="/assets/js/bootstrap.bundle.min.js"></script>
-  <!-- Theme Toggle Script -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <!-- swiper library -->
+    </div>
+  </footer>
+</body>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<!-- Theme Toggle Script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<!-- swiper library -->
 
-  <!-- js for handle counter  -->
-  <script>
-    const counters = document.querySelectorAll(".counter");
-    const speed = 24;
-    counters.forEach((counter) => {
-      const updateCount = () => {
-        const target = parseInt(counter.getAttribute("data-count"));
-        const count = parseInt(counter.innerText);
-        const increment = Math.trunc(target / speed);
-        if (count < target) {
-          counter.innerText = count + increment;
-          setTimeout(updateCount, 50);
-          /* change duration speed */
-          clearTimeout();
-        } else {
-          counter.innerText = target;
-        }
-      };
-      updateCount();
-    });
-  </script>
-  <!-- js for handle mode ----- -->
-  <script>
-    const htmlEl = document.documentElement;
-    const iconMobile = document.getElementById("themeIconMobile");
-    const iconDesktop = document.getElementById("themeIconDesktop");
-    const btnMobile = document.getElementById("themeToggleBtnMobile");
-    const btnDesktop = document.getElementById("themeToggleBtnDesktop");
+<!-- js for handle counter  -->
+<script>
+  const counters = document.querySelectorAll(".counter");
+  const speed = 24;
+  counters.forEach((counter) => {
+    const updateCount = () => {
+      const target = parseInt(counter.getAttribute("data-count"));
+      const count = parseInt(counter.innerText);
+      const increment = Math.trunc(target / speed);
+      if (count < target) {
+        counter.innerText = count + increment;
+        setTimeout(updateCount, 50);
+        /* change duration speed */
+        clearTimeout();
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCount();
+  });
+</script>
+<!-- js for handle mode ----- -->
+<script>
+  const htmlEl = document.documentElement;
+  const iconMobile = document.getElementById("themeIconMobile");
+  const iconDesktop = document.getElementById("themeIconDesktop");
+  const btnMobile = document.getElementById("themeToggleBtnMobile");
+  const btnDesktop = document.getElementById("themeToggleBtnDesktop");
 
-    const saved = localStorage.getItem("bsTheme");
-    if (saved) {
-      htmlEl.setAttribute("data-bs-theme", saved);
-      const iconClass = saved === "dark" ? "fas fa-moon" : "fas fa-sun";
-      iconMobile.className = iconClass;
-      iconDesktop.className = iconClass;
-    }
+  const saved = localStorage.getItem("bsTheme");
+  if (saved) {
+    htmlEl.setAttribute("data-bs-theme", saved);
+    const iconClass = saved === "dark" ? "fas fa-sun" : "fas fa-moon";
+    iconMobile.className = iconClass;
+    iconDesktop.className = iconClass;
+  }
 
-    function toggleTheme() {
-      const current = htmlEl.getAttribute("data-bs-theme");
-      const next = current === "light" ? "dark" : "light";
-      htmlEl.setAttribute("data-bs-theme", next);
-      localStorage.setItem("bsTheme", next);
-      const iconClass = next === "dark" ? "fas fa-moon" : "fas fa-sun";
-      iconMobile.className = iconClass;
-      iconDesktop.className = iconClass;
-    }
+  function toggleTheme() {
+    const current = htmlEl.getAttribute("data-bs-theme");
+    const next = current === "light" ? "dark" : "light";
+    htmlEl.setAttribute("data-bs-theme", next);
+    localStorage.setItem("bsTheme", next);
+    const iconClass = next === "dark" ? "fas fa-sun" : "fas fa-moon";
+    iconMobile.className = iconClass;
+    iconDesktop.className = iconClass;
+  }
 
-    btnMobile.addEventListener("click", toggleTheme);
-    btnDesktop.addEventListener("click", toggleTheme);
-  </script>
-  <!-- script handle aos animation-->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  btnMobile.addEventListener("click", toggleTheme);
+  btnDesktop.addEventListener("click", toggleTheme);
+</script>
+<!-- script handle aos animation-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </html>
