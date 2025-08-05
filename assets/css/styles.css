@@ -163,6 +163,7 @@ span {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   border: 1px solid var(--bs-border-color);
+  
 }
 /* - ------ section counter ---------*/
 
@@ -176,22 +177,4 @@ span {
   margin-top: 10px;
   font-size: 18px;
   color: var(--bs-body-color);
-}
-
-.dots-grid {
-  position: absolute;
-  bottom: -13%;
-  left: -8%;
-  display: grid;
-  grid-template-columns: repeat(12, 6px);
-  grid-template-rows: repeat(12, 6px);
-  gap: 20px 20px;
-  opacity: 1;
-}
-
-.dot {
-  width: 3px;
-  height: 3px;
-  background-color: var(--primary-color);
-  border-radius: 100%;
 }

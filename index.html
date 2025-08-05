@@ -1,284 +1,181 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- link framework csss bootstrap lasted version -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css" />
-    <!-- link style css  -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <!-- link font awesome icon -->
 
-    <!-- link for library swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header class="mt-4">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg px-3 py-2 align-items-center">
-          <!-- Logo -->
-          <a class="navbar-brand fw-bold" href="#">Jacob</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
 
-          <!-- Theme toggle + navbar toggler side-by-side on mobile -->
-          <div class="d-flex d-lg-none ms-auto gap-2">
-            <!-- Theme toggle button (mobile only) -->
-            <button class="btn btn-theme-toggle" id="themeToggleBtnMobile">
-              <i id="themeIconMobile" class="fas fa-moon"></i>
-            </button>
-            <!-- Navbar toggler -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-          <!-- Collapsible content -->
-          <div
-            class="collapse navbar-collapse justify-content-between"
-            id="navbarNav"
-          >
-            <!-- Center nav items -->
-            <ul class="navbar-nav mx-lg-auto text-center">
-              <li class="nav-item">
-                <a class="nav-link active hvr-underline-from-center" href="#"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link hvr-underline-from-center" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link hvr-underline-from-center" href="#"
-                  >Projects</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link hvr-underline-from-center" href="#"
-                  >Skills</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link hvr-underline-from-center" href="#"
-                  >Resume</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link hvr-underline-from-center" href="#"
-                  >Contact</a
-                >
-              </li>
-            </ul>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- animaton -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-            <!-- Theme toggle (for desktop only) -->
-            <div class="d-none d-lg-block">
-              <button class="btn btn-theme-toggle" id="themeToggleBtnDesktop">
-                <i id="themeIconDesktop" class="fas fa-moon"></i>
-              </button>
+</head>
+
+<body>
+
+    <header">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-scroll shadow-0 custom-navbar">
+            <div class="container">
+                <a class="navbar-brand me-auto fw-bold fs-5" href="#">HUON THANUN</a>
+                <button class="navbar-toggler border-0 shadow-none" type="button" aria-controls="navbarExample01"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="d-flex justify-content-start align-items-center">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-start justify-content-lg-center"
+                    id="navbarExample01">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item px-3">
+                            <a class="nav-link hvr-underline-from-left" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link hvr-underline-from-left" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link hvr-underline-from-left" href="#">SKILLS</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link hvr-underline-from-left" href="#">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link hvr-underline-from-left" href="#">COTACT</a>
+                        </li>
+                    </ul>
+
+                    <!-- Social Icons (Mobile only) -->
+                    <ul class="navbar-nav d-lg-none flex-row justify-content-start fs-5">
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Icons (Desktop only) -->
+                <ul class="navbar-nav d-none d-lg-flex fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-          </div>
         </nav>
-      </div>
-    </header>
+        </header>
 
-    <main>
-      <!-- <div class="hero-banner"></div> -->
-      <section class="py-5">
-        <div class="container">
-          <div class="row align-items-center">
-            <!-- Text Section -->
-            <div class="col-12 col-md-6 mb-4 mb-md-0">
-              <div class="hero-banner text-center">
-                <h1 class="display-4 fw-bolder mb-4">
-                  Hello, I'm <span>Jacob Thorn</span>
-                </h1>
-                <p class="lead mb-4">
-                  I’m a passionate web developer building modern and responsive
-                  websites.
-                </p>
-                <a
-                  href="#contact"
-                  class="btn btn-lg btn-primary text-light mb-4"
-                  >Resume Me</a
-                >
-
-                <!-- Social Icons -->
-                <div class="social-icons d-flex justify-content-center gap-3">
-                  <a
-                    href="https://github.com/yourusername"
-                    target="_blank"
-                    class="icon github"
-                    title="GitHub"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a
-                    href="https://linkedin.com/in/yourusername"
-                    target="_blank"
-                    class="icon linkedin"
-                    title="LinkedIn"
-                  >
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                  <a
-                    href="https://twitter.com/yourusername"
-                    target="_blank"
-                    class="icon twitter"
-                    title="Twitter/X"
-                  >
-                    <i class="fab fa-x-twitter"></i>
-                  </a>
+        <main>
+            <section id="about" class="about-section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6" data-aos-duration="700" data-aos="fade-right">
+                            <div class="dots-grid" aria-hidden="true">
+                                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+                                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+                                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+                                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+                                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+                                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+                                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+                                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+                                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+                                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+                                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+                                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+                            </div>
+                            <div class="image-container position-relative">
+                                <img src="assets/images/photo_2025-08-05_01-54-30.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6" data-aos-duration="700" data-aos="fade-left">
+                            <div class="section-header">
+                                <h2 class="section-title text-light">
+                                    Creative and detail-oriented
+                                    <span class="text-green">Junior Web Designer</span>
+                                </h2>
+                            </div>
+                            <p class="section-description">
+                                with a strong interest in building
+                                responsive, user-friendly websites. Skilled in
+                                front-end technologies like HTML, CSS, and
+                                React, with hands-on experience designing
+                                and developing a fully functional blog
+                                platform. Adept at turning ideas into
+                                interactive layouts and working
+                                collaboratively on real-world projects.
+                                Eager to contribute to a dynamic team and
+                                grow in the field of web and UI/UX design.
+                            </p>
+                            <a href="#" class="btn btn-green">Show CV<i class="fa-solid fa-circle-right ps-3"></i></a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
+            </section>
 
-            <!-- Image Section -->
-            <div class="col-12 col-md-6 text-center">
-              <div class="image-hero">
-                <img
-                  src="assets/img/jacob-thornton.jpg"
-                  alt="Jacob Thornton"
-                  class="img-fluid rounded-3"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </main>
 
-      <!-- Counter Section -->
-      <section class="container py-5 count">
-        <div class="row text-center g-4">
-          <div class="col-6 col-md-3">
-            <div class="counter-box">
-              <h2>150</h2>
-              <p>Projects</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="counter-box">
-              <h2>75</h2>
-              <p>Clients</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="counter-box">
-              <h2>300</h2>
-              <p>Followers</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="counter-box">
-              <h2>25</h2>
-              <p>Awards</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end section counter -->
-     <!-- end section counter -->
-<section id="about" class="about-section py-5">
-    <div class="container">
-        <div class="row align-items-center gy-4">
-            
-            <!-- Left Column: Dots Grid + Image -->
-            <div class="col-12 col-lg-6" data-aos-duration="700" data-aos="fade-right">
-                
-                <div class="dots-grid d-none d-md-block" aria-hidden="true">
-                    <!-- Shortened dots, see note below -->
-                   
-                    <!-- ... -->
-                </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const toggler = document.querySelector('.navbar-toggler');
+                const collapse = document.getElementById('navbarExample01');
 
-                <div class="image-hero text-center text-lg-start">
-                    <img
-                        src="assets/img/jacob-thornton.jpg"
-                        alt="Jacob Thornton"
-                        class="img-fluid rounded-3"
-                    />
-                </div>
-            </div>
+                toggler.addEventListener('click', function () {
+                    collapse.classList.toggle('show');
+                });
+            });
+            AOS.init();
+        </script>
 
-            <!-- Right Column: Text Content -->
-            <div class="col-12 col-lg-6" data-aos-duration="700" data-aos="fade-left">
-                <div class="section-header text-center text-lg-start">
-                    <h2 class="section-title text-light">
-                        Creative and detail-oriented
-                        <span class="text-green">Junior Web Designer</span>
-                    </h2>
-                </div>
-                <p class="section-description text-center text-lg-start">
-                    with a strong interest in building responsive, user-friendly websites. Skilled in
-                    front-end technologies like HTML, CSS, and React, with hands-on experience designing
-                    and developing a fully functional blog platform. Adept at turning ideas into
-                    interactive layouts and working collaboratively on real-world projects. Eager to
-                    contribute to a dynamic team and grow in the field of web and UI/UX design.
-                </p>
-                <div class="text-center text-lg-start">
-                    <a href="#" class="btn btn-green">
-                        Show CV
-                        <i class="fa-solid fa-circle-right ps-3"></i>
-                    </a>
-                </div>
-            </div>
+</body>
 
-        </div>
-    </div>
-</section>
-
-    </main>
-  </body>
-  <script src="/assets/js/bootstrap.bundle.min.js"></script>
-  <!-- Theme Toggle Script -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <!-- swiper library -->
-  <script>
-    const swiper = new Swiper(".hori", {
-      slidesPerView: "auto",
-      spaceBetween: 16,
-      grabCursor: true,
-      freeMode: true,
-    });
-  </script>
-  <script>
-    const htmlEl = document.documentElement;
-    const iconMobile = document.getElementById("themeIconMobile");
-    const iconDesktop = document.getElementById("themeIconDesktop");
-    const btnMobile = document.getElementById("themeToggleBtnMobile");
-    const btnDesktop = document.getElementById("themeToggleBtnDesktop");
-
-    const saved = localStorage.getItem("bsTheme");
-    if (saved) {
-      htmlEl.setAttribute("data-bs-theme", saved);
-      const iconClass = saved === "dark" ? "fas fa-moon" : "fas fa-sun";
-      iconMobile.className = iconClass;
-      iconDesktop.className = iconClass;
-    }
-
-    function toggleTheme() {
-      const current = htmlEl.getAttribute("data-bs-theme");
-      const next = current === "light" ? "dark" : "light";
-      htmlEl.setAttribute("data-bs-theme", next);
-      localStorage.setItem("bsTheme", next);
-      const iconClass = next === "dark" ? "fas fa-moon" : "fas fa-sun";
-      iconMobile.className = iconClass;
-      iconDesktop.className = iconClass;
-    }
-
-    btnMobile.addEventListener("click", toggleTheme);
-    btnDesktop.addEventListener("click", toggleTheme);
-  </script>
 </html>
