@@ -231,6 +231,11 @@ header {
   font-size: 42px;
   font-weight: bold;
   color: var(--bs-body-color);
+  display: inline-block;
+}
+.count .counter-box span {
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .counter-box p {
@@ -303,8 +308,7 @@ header {
   overflow: hidden;
   transition: box-shadow 0.3s ease;
   color: var(--bs-text);
-  border: 1px solid var(--bs-border-color);
-  box-shadow: 0 4px 8px rgba(10, 240, 48, 0.2);
+  height: 400px;
 }
 
 .portfolio-area .card:hover {
@@ -314,6 +318,8 @@ header {
 .card-img-top {
   border-radius: 10px 10px 0 0;
   transition: transform 0.4s ease;
+  object-fit: cover;
+  height: 270px;
 }
 
 .portfolio-area .card:hover .card-img-top {
