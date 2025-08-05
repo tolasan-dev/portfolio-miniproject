@@ -173,7 +173,7 @@ main {
 .portfolio-area .card,
 .portfolio-area img.card-img-top {
   border: 0;
-  border-radius: 10px;
+  border: 10px;
   transition: .3s ease;
 }
 .portfolio-area .card{
@@ -181,7 +181,7 @@ main {
 }
 
 .portfolio-area .card:hover img.card-img-top{
-  transform: scale(1.3) rotate(6deg);
+  transform: scale(1.2) rotate(4deg);
 }
 .portfolio-area .card:hover{
   box-shadow: 0 0 8px 4px rgba(8, 214, 101,0.6);
@@ -190,7 +190,7 @@ main {
 .portfolio-area .card .card-body {
   background-color: black;
   color: var(--color-fg);
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 5px 5px;
 }
 .portfolio-area .card .card-body .btn {
   border: none;
