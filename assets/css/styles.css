@@ -3,12 +3,15 @@
   --bs-body-color: #1c1917;
   --bs-border-color: #12d833;
   --bs-nav-link-hover: #12d833;
+  --bs-primary: #12d833;
+  --bg-hover: #00c950;
 }
 [data-bs-theme="dark"] {
-  --bs-body-bg: #edfff6;
   --bs-body-color: #f1f1f1;
   --bs-border-color: #12d833;
   --bs-nav-link-hover: #12d833;
+  --bs-primary: #12d833;
+  --bg-hover: #00a63e;
 }
 @font-face {
   font-family: "Poppins";
@@ -19,7 +22,7 @@ body {
   font-family: "Poppins";
 }
 [data-bs-theme="dark"] body {
-  background: linear-gradient(135deg, #0b150e, #101d0d, #0e1315);
+  background: linear-gradient(135deg, #0d2515, #17201a);
   /* background: #1c1917; */
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
@@ -44,7 +47,7 @@ body {
   padding: 10px;
 }
 .btn:hover {
-  background-color: #23b203;
+  background-color: var(--bg-hover);
 }
 span {
   color: #12d833;
@@ -92,12 +95,13 @@ span {
 .image-hero {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 .image-hero img {
   width: 500px;
+  background-color: var(--bs-primary);
 }
 .btn-theme-toggle {
-  /* background-color: var(--bs-body-bg); */
   color: var(--bs-body-color);
   border: 1px solid var(--bs-border-color);
   transition: background-color 0.3s, color 0.3s;
@@ -133,9 +137,6 @@ span {
   opacity: 0.9;
 }
 
-.section-tool {
-  /* background: rgba(255, 255, 255, 0.2); */
-}
 .card {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -155,15 +156,12 @@ span {
 
 .count {
   width: 100%;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.123);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   padding: 30px 20px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  border: 1px solid var(--bs-border-color);
-  
 }
 /* - ------ section counter ---------*/
 
