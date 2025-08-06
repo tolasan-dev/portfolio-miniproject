@@ -7,18 +7,18 @@
   --font-family-base: "Poppins", sans-serif;
   --bs-box-shadow: 0 8px 25px rgba(35, 201, 113, 0.3);
   --bg-highlight: #12d833;
-  --bs-btn-text-hover: #fff;
+  --bs-btn-text-hover: #ffffffcc;
 }
 
 [data-bs-theme="light"] {
-  --bs-body-bg: #edfff6;
-  --bs-text: #1c1917;
+  --bs-body-bg: #edfff6d2;
+  --bs-text: #1c1917b1;
   --bs-box-shadow-navbar: 0 4px 30px rgba(0, 0, 0, 0.25);
 }
 
 [data-bs-theme="dark"] {
   --bs-body-bg: linear-gradient(135deg, #08120c, #0a7e31);
-  --bs-text: #f1f1f1;
+  --bs-text: #f1f1f1dd;
   --bs-box-shadow-navbar: 0 4px 30px rgba(255, 255, 255, 0.25);
 }
 
@@ -60,6 +60,10 @@ header {
   -webkit-backdrop-filter: blur(5px);
   border-radius: 10px;
   /* border: 1px solid #12d833; */
+}
+
+.navbar .navbar-brand{
+  text-shadow: 1px 1px #12d833;
 }
 
 .navbar .navbar-nav .nav-item .nav-link.active {
@@ -116,23 +120,7 @@ header {
   margin-bottom: 32px;
 }
 
-/* .btn-green:hover {
-  background-color: transparent;
-  border-color: var(--bs-border-color);
-  color: var(--bs-primary);
-  transform: translateY(-2px);
-  box-shadow: var(--bs-box-shadow);
-} */
 
-/* .btn-green {
-  background-color: var(--bs-primary);
-  border-color: var(--bs-border-color);
-  color: var(--bs-text);
-  font-weight: 600;
-  padding: 12px 30px;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-} */
 /*----------------- hover effect on nav-link ------------------ */
 /* Underline From Center */
 .hvr-underline-from-center {
@@ -248,8 +236,6 @@ header {
   font-size: 20px;
   color: var(--bs-body-color);
 }
-
-/*-----------  end section counter ------------------- */
 /* about */
 .image-container {
   width: 450px;
@@ -264,6 +250,7 @@ header {
   position: absolute;
   /* bottom: -85%; */
   /* left: 13%; */
+  z-index: ;
   bottom: -15%;
   left: -5%;
   display: grid;
@@ -279,7 +266,33 @@ header {
   height: 3px;
   background-color: var(--bs-primary);
   border-radius: 100%;
+
 }
+
+@media (max-width:820px) {
+  .section-title{
+    width: 80%;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 120px;
+  }
+  .section-description{
+    font-size: 14px;
+    padding: 10px 10px;
+  }
+  .btn{
+    padding: 3px 7px;
+    margin-left: 20px;
+  }
+  .icon{
+    margin-top: 15px;
+    font-size: 5px;
+    border: none;
+  }
+}
+
+/*-----------  end section counter ------------------- */
 
 /* ===== Portfolio Section ===== */
 .portfolio-area {
@@ -403,11 +416,9 @@ header {
 /* ----skill */
 
 
-/* body {
-  background: var(--bs-body-bg);
-  font-family: var(--font-family-base);
-  color: var(--bs-text);
-} */
+.skill {
+  margin-bottom: 90px;
+}
 
 .import-color {
   color: var(--bs-primary);
@@ -416,8 +427,7 @@ header {
 }
 
 .text-header {
-  width: 40%;
-  margin: 0 auto;
+  width: 30%;
 }
 
 .skill .skill-card {
@@ -502,6 +512,7 @@ header {
   .skill-sm {
     display: none;
   }
+
 }
 
 @media (max-width: 600px) {
@@ -520,6 +531,7 @@ header {
 
   .skill-sm {
     display: block;
+    padding: 0 10px;
   }
 
   .import-color {
@@ -527,76 +539,94 @@ header {
   }
 }
 
-/* Accordion Section */
+/* resume Section */
 
-.accordion-item {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
+.resume .accordion-item {
+  border-radius: 2px;
   margin-bottom: 1rem;
-  border: 1px solid var(--bs-primary);
   overflow: hidden;
   transition: all 0.3s ease;
 }
 
-.accordion-button {
+.resume .accordion-button {
   background: transparent;
-  color: var(--bs-text);
+  color: var(--bs-text) !important;
   font-weight: bold;
   border: none;
   border-radius: 0;
   padding: 1rem 1.25rem;
-  transition: background 0.3s ease;
-  border: 1px solid var(--bs-primary);
+  transition: 0.3s ease;
   border-radius: 5px !important;
 }
 
-.accordion-button:not(.collapsed) {
+
+ .resume .accordion-button span{
+  color: var(--bs-text);
+}
+
+@media (max-width:992px) {
+  .accordion-button span{
+    font-size: 12.2px;
+  }
+  .accordion-button::after{
+    font-size: 7px !important;
+  }
+  .accordion-button:not(.collapsed)::after{
+    font-size: 7px !important;
+  }
+}
+
+.resume .accordion-button:not(.collapsed) {
   background: rgba(18, 216, 51, 0.1);
-  color: var(--bs-primary);
+  color: var(--bs-text);
   box-shadow: none;
 }
 
-.accordion-button:focus {
+.resume .accordion-button:focus {
   box-shadow: none;
 }
 
-.accordion-button::after {
-  filter: brightness(0) invert(1);
-  transition: transform 0.3s ease;
+.resume .accordion-button::after {
+  transition: transform 0.5s ease;
+  filter: brightness(0) saturate(100%) invert(64%) sepia(85%) saturate(681%) hue-rotate(75deg) brightness(95%) contrast(103%);
 }
 
-.accordion-button:not(.collapsed)::after {
+.resume .accordion-button:not(.collapsed)::after {
   transform: rotate(180deg);
+  filter: brightness(0) saturate(100%) invert(64%) sepia(85%) saturate(681%) hue-rotate(75deg) brightness(95%) contrast(103%);
 }
 
-.accordion-body {
-  background: rgba(255, 255, 255, 0.02);
+
+.resume .accordion-body {
   padding: 1rem 1.25rem;
   font-size: 0.95rem;
-  color: #ddd;
+  color:var(--bs-text);
 }
 
 /* Contact Section */
 
 .contact-info {
-  background-color: #1c1c1c;
+  background-color: var(--bs-body-bg);
+  box-shadow: var(--bs-box-shadow);
 }
 
 .contact label {
   color: var(--bs-primary);
   font-weight: 600;
   font-size: 16px;
+  margin-right: 7px;
 }
 
 .contact .icon {
   color: var(--bs-primary);
   font-size: 20px;
+  border: none;
 }
 
 .contact a {
   font-size: 16px;
   transition: 0.3s;
-  color: inherit;
+  color: var(--bs-text);
 }
 
 .contact a:hover {
@@ -604,8 +634,16 @@ header {
   text-decoration: underline;
 }
 
+@media (max-witdh:600px) {
+  .contact a{
+    font-size: 11px;
+  }
+}
+
+
+
 .contact-form {
-  background-color: #1f1f1f;
+  background-color: var(--bs-body-bg);
   border-radius: 8px;
 }
 
@@ -615,9 +653,9 @@ header {
 }
 
 .contact-form .form-control {
-  background-color: #333;
+  background-color: var(--bs-body-bg);
   color: var(--bs-text);
-  border: none;
+  border: 1px solid var(--bs-border-color);
 }
 
 .contact-form .form-control::placeholder {
@@ -625,7 +663,7 @@ header {
 }
 
 .contact-form .form-control:focus {
-  background-color: #333;
+  background-color: var(--bs-body-bg);
   color: var(--bs-text);
   box-shadow: none;
   border-color: var(--bs-primary);
@@ -639,9 +677,17 @@ header {
   padding: 10px 25px;
   border: none;
   border-radius: 4px;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
-.submit-btn:hover {
-  background-color: #b4e000;
+@media (max-width:600px) {
+    .submit-btn{
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+}
+
+.submit-btn:hover{
+  border: 1px solid #12d833;
+  background-color: rgba(0, 183, 255, 0);
 }
