@@ -282,8 +282,9 @@ header {
     padding: 10px 10px;
   }
   .btn{
-    padding: 3px 7px;
+    padding: 6px 7px;
     margin-left: 20px;
+    font-size: 13px;
   }
   .icon{
     margin-top: 15px;
@@ -669,25 +670,3 @@ header {
   border-color: var(--bs-primary);
 }
 
-.submit-btn {
-  background-color: var(--bs-primary);
-  color: var(--bs-btn-text-hover);
-  font-weight: 600;
-  font-size: 17px;
-  padding: 10px 25px;
-  border: none;
-  border-radius: 4px;
-  transition: 0.6s;
-}
-
-@media (max-width:600px) {
-    .submit-btn{
-    padding: 10px 15px;
-    font-size: 10px;
-  }
-}
-
-.submit-btn:hover{
-  border: 1px solid #12d833;
-  background-color: rgba(0, 183, 255, 0);
-}
