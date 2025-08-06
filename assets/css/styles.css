@@ -399,3 +399,249 @@ header {
   transform: scale(1.1);
   color: var(--bs-primary);
 }
+
+/* ----skill */
+
+
+/* body {
+  background: var(--bs-body-bg);
+  font-family: var(--font-family-base);
+  color: var(--bs-text);
+} */
+
+.import-color {
+  color: var(--bs-primary);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.text-header {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.skill .skill-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 3px solid var(--bs-primary);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  padding: 1rem 1.5rem;
+  transition: 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.skill .progress-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--bs-primary);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  opacity: 1;
+  z-index: 0;
+  transition: width 0.4s ease;
+}
+
+.skill .skill-card.active .skill-percent {
+  opacity: 1;
+}
+
+.skill .card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.skill .card-left {
+  display: flex;
+  align-items: center;
+}
+
+.skill .card-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.skill .card-title {
+  color: var(--bs-text);
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.skill .skill-percent {
+  color: var(--bs-text);
+  font-weight: bold;
+  font-size: 16px;
+  opacity: 0;
+  transition: 0.3s ease;
+  user-select: none;
+}
+
+.skill-sm {
+  display: none;
+}
+
+@media (min-width: 601px) {
+  .title-header {
+    font-size: 25px;
+  }
+
+  .text-header {
+    width: 90%;
+    font-size: 20px;
+  }
+
+  .skill-sm {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .title-header {
+    font-size: 15px;
+  }
+
+  .text-header {
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .skill-md {
+    display: none;
+  }
+
+  .skill-sm {
+    display: block;
+  }
+
+  .import-color {
+    font-size: 15px;
+  }
+}
+
+/* Accordion Section */
+
+.accordion-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--bs-primary);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion-button {
+  background: transparent;
+  color: var(--bs-text);
+  font-weight: bold;
+  border: none;
+  border-radius: 0;
+  padding: 1rem 1.25rem;
+  transition: background 0.3s ease;
+  border: 1px solid var(--bs-primary);
+  border-radius: 5px !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background: rgba(18, 216, 51, 0.1);
+  color: var(--bs-primary);
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+}
+
+.accordion-body {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 1rem 1.25rem;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+/* Contact Section */
+
+.contact-info {
+  background-color: #1c1c1c;
+}
+
+.contact label {
+  color: var(--bs-primary);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.contact .icon {
+  color: var(--bs-primary);
+  font-size: 20px;
+}
+
+.contact a {
+  font-size: 16px;
+  transition: 0.3s;
+  color: inherit;
+}
+
+.contact a:hover {
+  color: var(--bs-primary);
+  text-decoration: underline;
+}
+
+.contact-form {
+  background-color: #1f1f1f;
+  border-radius: 8px;
+}
+
+.contact-form h3 {
+  color: var(--bs-text);
+  font-weight: bold;
+}
+
+.contact-form .form-control {
+  background-color: #333;
+  color: var(--bs-text);
+  border: none;
+}
+
+.contact-form .form-control::placeholder {
+  color: #aaa;
+}
+
+.contact-form .form-control:focus {
+  background-color: #333;
+  color: var(--bs-text);
+  box-shadow: none;
+  border-color: var(--bs-primary);
+}
+
+.submit-btn {
+  background-color: var(--bs-primary);
+  color: var(--bs-btn-text-hover);
+  font-weight: 600;
+  font-size: 17px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #b4e000;
+}
