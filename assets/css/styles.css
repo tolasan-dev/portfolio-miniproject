@@ -3,21 +3,23 @@
   --bs-primary: #12d833;
   --bs-nav-link-hover: #12d833;
   --bs-border-color: #12d833;
-  --bg-hover: #00c950;
+  --bg-hover: transparent;
   --font-family-base: "Poppins", sans-serif;
   --bs-box-shadow: 0 8px 25px rgba(35, 201, 113, 0.3);
   --bg-highlight: #12d833;
+  --bs-btn-text-hover: #fff;
 }
 
 [data-bs-theme="light"] {
   --bs-body-bg: #edfff6;
   --bs-text: #1c1917;
+  --bs-box-shadow-navbar: 0 4px 30px rgba(0, 0, 0, 0.25);
 }
 
 [data-bs-theme="dark"] {
   --bs-body-bg: linear-gradient(135deg, #08120c, #0a7e31);
   --bs-text: #f1f1f1;
-  --bg-hover: #00a63e;
+  --bs-box-shadow-navbar: 0 4px 30px rgba(255, 255, 255, 0.25);
 }
 
 /* 4. Font Face Setup */
@@ -33,6 +35,7 @@ body {
   font-family: var(--font-family-base);
   background: var(--bs-body-bg);
   color: var(--bs-text);
+  overflow-x: hidden;
 }
 
 /* Optional: Add animation only for dark mode gradient */
@@ -52,16 +55,16 @@ header {
 }
 .navbar {
   background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--bs-box-shadow-navbar);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 10px;
-  border: 1px solid #12d833;
+  /* border: 1px solid #12d833; */
 }
 
 .navbar .navbar-nav .nav-item .nav-link.active {
   color: var(--bs-primary);
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 .navbar .navbar-nav .nav-item .nav-link {
   color: var(--bs-text);
@@ -70,13 +73,21 @@ header {
   padding: 10px;
 }
 .btn:hover {
-  background-color: var(--bg-hover);
+  background-color: transparent;
+  border-color: var(--bs-border-color);
+  color: var(--bs-primary);
+  transform: scale(1.1);
   box-shadow: var(--bs-box-shadow);
 }
 
 .btn {
-  background-color: #12d833;
-  border: none;
+  background-color: var(--bs-primary);
+  border-color: var(--bs-border-color);
+  color: var(--bs-btn-text-hover);
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 /* global class ---- */
 .title-name {
@@ -105,15 +116,15 @@ header {
   margin-bottom: 32px;
 }
 
-.btn-green:hover {
+/* .btn-green:hover {
   background-color: transparent;
   border-color: var(--bs-border-color);
   color: var(--bs-primary);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(35, 201, 113, 0.3);
-}
+  box-shadow: var(--bs-box-shadow);
+} */
 
-.btn-green {
+/* .btn-green {
   background-color: var(--bs-primary);
   border-color: var(--bs-border-color);
   color: var(--bs-text);
@@ -121,7 +132,7 @@ header {
   padding: 12px 30px;
   border-radius: 5px;
   transition: all 0.3s ease;
-}
+} */
 /*----------------- hover effect on nav-link ------------------ */
 /* Underline From Center */
 .hvr-underline-from-center {
@@ -169,7 +180,7 @@ header {
   border-radius: 8px;
 }
 .btn-theme-toggle {
-  color: var(--bs-body-color);
+  color: var(--bs-body-bg);
   border: 1px solid var(--bs-border-color);
   transition: background-color 0.3s, color 0.3s;
   padding: 0.5rem 0.75rem;
@@ -194,7 +205,7 @@ header {
 /*  icon social media */
 .icon {
   border: 1px solid var(--bs-border-color);
-  color: var(--bs-body-color);
+  /* color: var(--bs-primary); */
 }
 .social-icons .icon:hover {
   transform: scale(1.1);
@@ -241,21 +252,26 @@ header {
 /*-----------  end section counter ------------------- */
 /* about */
 .image-container {
-  width: 400px;
+  width: 450px;
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  /* display: flex;
+  justify-content: center; */
+  border-radius: 3px;
 }
 
 .dots-grid {
   position: absolute;
-  left: 100px;
+  /* bottom: -85%; */
+  /* left: 13%; */
+  bottom: -15%;
+  left: -5%;
   display: grid;
   grid-template-columns: repeat(12, 6px);
   grid-template-rows: repeat(12, 6px);
   gap: 20px 20px;
   opacity: 1;
-  transform: translateY(178px);
+  /* transform: translateY(178px); */
 }
 
 .dot {
