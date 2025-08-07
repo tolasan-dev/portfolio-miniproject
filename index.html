@@ -164,28 +164,28 @@
         <div class="row text-center g-4">
           <div class="col-6 col-md-3">
             <div class="counter-box">
-              <h2 data-count="150" class="counter">0</h2>
+              <span data-count="150" class="counter">0</span>
               <span>+</span>
               <p>Projects</p>
             </div>
           </div>
           <div class="col-6 col-md-3">
             <div class="counter-box">
-              <h2 data-count="75" class="counter">0</h2>
+              <span data-count="75" class="counter">0</span>
               <span>+</span>
               <p>Clients</p>
             </div>
           </div>
           <div class="col-6 col-md-3">
             <div class="counter-box">
-              <h2 data-count="300" class="counter">0</h2>
+              <span data-count="300" class="counter">0</span>
               <span>+</span>
               <p>Followers</p>
             </div>
           </div>
           <div class="col-6 col-md-3">
             <div class="counter-box">
-              <h2 data-count="25" class="counter">0</h2>
+              <span data-count="25" class="counter">0</span>
               <span>+</span>
               <p>Awards</p>
             </div>
@@ -193,11 +193,15 @@
         </div>
       </section>
       <!-- end section counter -->
-      <!-- about section -->
+
       <!-- about section -->
       <section id="about" class="about-section py-5">
-        <h1 class="text-center fw-bolder mb-3 py-4"><span
-            class="title-name">About</span> Me</h1>
+        <div class="section-header mb-5 text-center" data-aos="fade-up">
+            <h1 class="section-title fw-bolder">
+                <span class="px-2 px-xl-4 px-lg-3">About</span>
+            </h1>
+            <span class="section-subtitle fst-italic fs-5">Introduce Me</span>
+        </div>
         <div class="container-fluid-sm container-lg px-2">
           <div class="row align-items-center justify-content-between">
             <div class="col-12 col-lg-6 position-relative z-3"
@@ -350,18 +354,18 @@
               </div>
               <div class="mx-0 mx-lg-2 mx-xl-5">
                 <img src="assets/img/jacob-thornton.jpg" alt
-                  class="img-fluid rounded-3" />
+                  class="img-fluid rounded-3 position-relative" />
               </div>
             </div>
             <div class="col-12 col-lg-6" data-aos-duration="700"
               data-aos="fade-left">
-              <div class="section-header">
-                <h2 class="section-title">
+              <div class="about-header">
+                <h2 class="about-title">
                   Creative and detail-oriented
                   <span class="title-name">Junior Web Designer</span>
                 </h2>
               </div>
-              <p class="section-description">
+              <p class="about-description">
                 with a strong interest in building responsive, user-friendly
                 websites. Skilled in front-end technologies like HTML, CSS, and
                 React, with hands-on experience designing and developing a fully
@@ -379,18 +383,17 @@
       <!-- end section about me -->
       <!-- section portfolio  -->
       <section id="portfolio-area" class="portfolio-area mt-5 mb-5">
-        <div class="portfolio-header mb-5 text-center">
-          <h1 class="portfolio-title fw-bolder">
+        <div class="section-header mb-5 text-center" data-aos="fade-up">
+          <h1 class="section-title fw-bolder">
             <span class="px-2 px-xl-4 px-lg-3">Portfolio</span>
           </h1>
-          <span class="portfolio-subtitle fst-italic fs-5">team & own
+          <span class="section-subtitle fst-italic fs-5">team & own
             works</span>
         </div>
-        <div class="container-fluid-sm container-lg px-2 p-0">
-          <div class="w-100 px-0 mx-0">
-            <div class="row px-0">
+        <div class="container">
+            <div class="row">
               <!-- row 1 -->
-              <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
+              <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4 " data-aos="fade-up">
                 <div class="card">
                   <div class="overflow-hidden">
                     <img
@@ -399,17 +402,17 @@
                       alt="Project1" />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Project name 3</h5>
+                    <h5 class="card-title">Project name</h5>
                     <p class="card-text">Description about project</p>
-                    <div class="program-language mb-3">
+                    <div class="categories mb-3">
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">tailwindCss</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">tailwindCss</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">vue</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">vue</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">java</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">java</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">mysql</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">mysql</span>
                     </div>
                     <a href="#" class="btn btn-primary">
                       <i class="fas fa-link"></i>
@@ -420,7 +423,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
+              <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4 " data-aos="fade-up">
                 <div class="card">
                   <div class="overflow-hidden">
                     <img
@@ -429,17 +432,17 @@
                       alt="Project1" />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Project name 3</h5>
+                    <h5 class="card-title">Project name</h5>
                     <p class="card-text">Description about project</p>
-                    <div class="program-language mb-3">
+                    <div class="categories mb-3">
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">tailwindCss</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">tailwindCss</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">vue</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">vue</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">java</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">java</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">mysql</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">mysql</span>
                     </div>
                     <a href="#" class="btn btn-primary">
                       <i class="fas fa-link"></i>
@@ -450,7 +453,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
+              <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4 " data-aos="fade-up">
                 <div class="card">
                   <div class="overflow-hidden">
                     <img
@@ -459,17 +462,17 @@
                       alt="Project1" />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Project name 3</h5>
+                    <h5 class="card-title">Project name</h5>
                     <p class="card-text">Description about project</p>
-                    <div class="program-language mb-3">
+                    <div class="categories mb-3">
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">tailwindCss</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">tailwindCss</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">vue</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">vue</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">java</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">java</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">mysql</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">mysql</span>
                     </div>
                     <a href="#" class="btn btn-primary">
                       <i class="fas fa-link"></i>
@@ -480,7 +483,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
+              <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4 " data-aos="fade-up">
                 <div class="card">
                   <div class="overflow-hidden">
                     <img
@@ -489,17 +492,17 @@
                       alt="Project1" />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Project name 3</h5>
+                    <h5 class="card-title">Project name</h5>
                     <p class="card-text">Description about project</p>
-                    <div class="program-language mb-3">
+                    <div class="categories mb-3">
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">tailwindCss</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">tailwindCss</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">vue</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">vue</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">java</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">java</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">mysql</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">mysql</span>
                     </div>
                     <a href="#" class="btn btn-primary">
                       <i class="fas fa-link"></i>
@@ -510,7 +513,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
+              <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4 " data-aos="fade-up">
                 <div class="card">
                   <div class="overflow-hidden">
                     <img
@@ -519,17 +522,17 @@
                       alt="Project1" />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Project name 3</h5>
+                    <h5 class="card-title">Project name</h5>
                     <p class="card-text">Description about project</p>
-                    <div class="program-language mb-3">
+                    <div class="categories mb-3">
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">tailwindCss</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">tailwindCss</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">vue</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">vue</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">java</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">java</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">mysql</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">mysql</span>
                     </div>
                     <a href="#" class="btn btn-primary">
                       <i class="fas fa-link"></i>
@@ -540,7 +543,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
+              <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4 " data-aos="fade-up">
                 <div class="card">
                   <div class="overflow-hidden">
                     <img
@@ -549,17 +552,17 @@
                       alt="Project1" />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Project name 3</h5>
+                    <h5 class="card-title">Project name</h5>
                     <p class="card-text">Description about project</p>
-                    <div class="program-language mb-3">
+                    <div class="categories mb-3">
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">tailwindCss</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">tailwindCss</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">vue</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">vue</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">java</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">java</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">mysql</span>
+                        class="lang-1 px-2 py-1 rounded-5 me-1 mt-1">mysql</span>
                     </div>
                     <a href="#" class="btn btn-primary">
                       <i class="fas fa-link"></i>
@@ -571,21 +574,18 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </section>
       <!-- skill for md-xxl -->
       <section id="skill" class="skill mt-md-3 mt-lg-5 mb-0">
-        <div class="container-fluid-sm container-lg px-2">
-          <h2 class="d-block text-center fw-bold">My Top
-            Skills</h2>
-          <span class="text-header d-block text-center mb-0 m-auto">
-            Passionate about <span class="import-color">frontend design</span>
-            using React,
-            Bootstrap, and CSS3 to craft user-friendly interfaces.
-          </span>
-
-          <div class="row mt-5 g-lg-4 skill-md">
+    <div class="container-fluid-sm container-lg px-2">
+        <div class="section-header mb-5 text-center" data-aos="fade-up"> 
+            <h1 class="section-title fw-bolder mb-3">
+                <span class="px-2 px-xl-4 px-lg-3">Top Skills</span>
+            </h1>
+            <span class="section-subtitle fst-italic fs-5">Passionate about frontend design using React, Bootstrap, and CSS3 to craft user-friendly interfaces.</span>
+        </div>
+          <div class="row mt-5 g-lg-4 skill-md" data-aos="fade-up">
             <div class="col-sm-6 col-lg-3">
               <div class="card skill-card" data-percent="90">
                 <div class="progress-bg"></div>
@@ -1333,7 +1333,9 @@
   <!-- script handle aos animation-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+        once:true
+    });
   </script>
   <script>
     const cards = document.querySelectorAll(".skill-card");
