@@ -19,7 +19,7 @@
 }
 
 [data-bs-theme="dark"] {
-  --bs-body-bg: linear-gradient(135deg, #08120c, #0a7e31);
+  --bs-body-bg: linear-gradient(135deg, #08120c, #0a7e3163);
   --bs-text: #f1f1f1dd;
   --bs-box-shadow-navbar: 0 4px 30px rgba(255, 255, 255, 0.25);
   --bs-categories-program: #00ff2a50;
@@ -39,6 +39,7 @@ body {
   background: var(--bs-body-bg);
   color: var(--bs-text);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* Optional: Add animation only for dark mode gradient */
@@ -243,6 +244,7 @@ header {
   font-size: 20px;
   color: var(--bs-body-color);
 }
+/*-----------  end section counter ------------------- */
 
 /* ---------- section About ---------------------- */
 
@@ -316,7 +318,7 @@ header {
   }
 }
 
-/*-----------  end section counter ------------------- */
+
 
 /* ===== Portfolio Section ===== */
 .portfolio-area {
@@ -331,9 +333,12 @@ header {
   border-radius: 10px;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
-  color: var(--bs-text);
   box-shadow: 0 4px 8px rgba(126, 126, 126, 0.274);
-  height: 420px;
+  height: auto;
+}
+.portfolio-area .card a{
+  color: var(--bs-text);
+  text-decoration: none;
 }
 
 .portfolio-area .card:hover {
@@ -344,9 +349,10 @@ header {
   border-radius: 10px 10px 0 0;
   transition: transform 0.4s ease;
   object-fit: cover;
+  height: 290px;
 }
 
-.portfolio-area .card:hover .card-img-top {
+.portfolio-area .card:hover a .card-img-top {
   transform: scale(1.1) rotate(2deg);
 }
 
@@ -637,7 +643,7 @@ header {
   text-decoration: underline;
 }
 
-@media (max-witdh:600px) {
+@media (max-width:600px) {
   .contact a{
     font-size: 11px;
   }
@@ -658,7 +664,10 @@ header {
 .contact-form .form-control {
   background-color: var(--bs-body-bg);
   color: var(--bs-text);
-  border: 1px solid var(--bs-border-color);
+  border: 1px solid rgba(128, 128, 128, 0.308);
+  border-top: none;
+  border-right: none;
+  border-left: none;
 }
 
 .contact-form .form-control::placeholder {
@@ -669,6 +678,6 @@ header {
   background-color: var(--bs-body-bg);
   color: var(--bs-text);
   box-shadow: none;
-  border-color: var(--bs-primary);
+  border-color: #12d83396;
 }
 
