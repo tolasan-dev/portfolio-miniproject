@@ -11,8 +11,8 @@
 
 - **HTML5**
 - **CSS3 / Bootstrap**
-- **JavaScript (js's Library animation as like : AOS)
-- **Font Awesome is the Internet's icon library and toolki
+- **JavaScript (js's Library animation as like : AOS)**
+- **Font Awesome is the Internet's icon library and toolki**
 - **Tools:** Git, GitHub, VS Code
 
  ## 👥 Team G12 Members
