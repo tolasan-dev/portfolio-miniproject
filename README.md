@@ -1,10 +1,6 @@
-🎯 Project Objective
-The main goal of this project is to:
+## 🎯 Objectives
 
-Apply frontend and backend web development skills
-
-Practice team collaboration using Git and GitHub
-
-Build a professional, clean, and modern portfolio website
-
-Prepare for real-world software development workflow
+- Showcase each member’s apply knowlang what we have been learned!!
+- Practice real-world team collaboration using Git and GitHub
+- Apply HTML, CSS, less code js and any code js and hugs consumption bootstrap lastes version 5.3.7
+- Create a mobile-responsive portfolio layout
