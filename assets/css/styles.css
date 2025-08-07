@@ -1,6 +1,7 @@
 /* 1. Global Theme Variables */
 :root {
-  --bs-primary: #12d833d2;
+  /* --bs-primary: #12d833d2; */
+  --bs-primary: #2ec948;
   --bs-nav-link-hover: #12d833;
   --bs-border-color: #12d833;
   --bg-hover: transparent;
@@ -76,6 +77,7 @@ header {
 }
 .navbar .navbar-nav .nav-item .nav-link {
   color: var(--bs-text);
+  padding-inline: 18px;
 }
 .btn-mode {
   padding: 10px;
@@ -284,6 +286,12 @@ header {
   opacity: 1;
   /* transform: translateY(178px); */
 }
+@media (min-width:992px) and (max-width:1199px) {
+  .dots-grid {
+  bottom: 15%;
+  left: -5%;
+  }
+}
 
 .dot {
   width: 3px;
@@ -332,7 +340,7 @@ header {
   overflow: hidden;
   transition: box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(126, 126, 126, 0.274);
-  height: auto;
+  height: 480px;
 }
 .portfolio-area .card a{
   color: var(--bs-text);
@@ -382,9 +390,32 @@ header {
   border-radius: 2rem;
   margin: 0.25rem 0.25rem 0 0;
   cursor: default;
+   border: 1px solid rgba(255, 0, 0, 0) ;
+   transition: .3s;
 }
-.categories span:nth-child(even){
-  background-color: var(--bs-categories-program) !important;
+.categories .html{
+  background-color: rgba(220, 20, 60,0.35) !important;
+}
+.categories .html:hover{
+  border:1px solid rgb(220, 20, 60) !important;
+}
+.categories .css{
+  background-color: rgba(20, 50, 220, 0.35) !important;
+}
+.categories .css:hover{
+  border:1px solid rgb(20, 50, 220) !important;
+}
+.categories .js{
+  background-color: rgba(220, 217, 20, 0.35) !important;
+}
+.categories .js:hover{
+  border:1px solid rgb(220, 217, 20) !important;
+}
+.categories .bootstrap{
+  background-color: rgba(197, 20, 220, 0.35) !important;
+}
+.categories .bootstrap{
+  border: 1px solid rgb(197, 20, 220) !important;
 }
 
 /* ===== Action Buttons ===== */
@@ -420,7 +451,7 @@ header {
   color: var(--bs-primary);
 }
 
-/* ----skill */
+/* ---- section skill------ */
 
 .skill {
   margin-bottom: 90px;
