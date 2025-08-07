@@ -11,7 +11,7 @@
 }
 
 [data-bs-theme="light"] {
-  --bs-body-bg: #edfff6d2;
+  --bs-body-bg: 
   --bs-text: #1c1917b1;
   --bs-box-shadow-navbar: 0 4px 30px rgba(0, 0, 0, 0.25);
 
@@ -65,7 +65,7 @@ header {
   /* border: 1px solid #12d833; */
 }
 
-.navbar .navbar-brand{
+.navbar .navbar-brand {
   text-shadow: 1px 1px #12d833;
 }
 
@@ -124,7 +124,6 @@ header {
   font-size: 1.375rem; /* 22px */
   font-style: italic;
 }
-
 
 
 /*----------------- hover effect on nav-link ------------------ */
@@ -289,27 +288,26 @@ header {
   height: 3px;
   background-color: var(--bs-primary);
   border-radius: 100%;
-
 }
 
-@media (max-width:820px) {
-  .section-title{
+@media (max-width: 820px) {
+  .section-title {
     width: 80%;
     font-size: 30px;
     text-align: center;
     margin: 0 auto;
     margin-top: 120px;
   }
-  .section-description{
+  .section-description {
     font-size: 14px;
     padding: 10px 10px;
   }
-  .btn{
+  .btn {
     padding: 6px 7px;
     margin-left: 20px;
     font-size: 13px;
   }
-  .icon{
+  .icon {
     margin-top: 15px;
     font-size: 5px;
     border: none;
@@ -418,7 +416,6 @@ header {
 
 /* ----skill */
 
-
 .skill {
   margin-bottom: 90px;
 }
@@ -515,7 +512,6 @@ header {
   .skill-sm {
     display: none;
   }
-
 }
 
 @media (max-width: 600px) {
@@ -562,19 +558,18 @@ header {
   border-radius: 5px !important;
 }
 
-
- .resume .accordion-button span{
+.resume .accordion-button span {
   color: var(--bs-text);
 }
 
-@media (max-width:992px) {
-  .accordion-button span{
+@media (max-width: 992px) {
+  .accordion-button span {
     font-size: 12.2px;
   }
-  .accordion-button::after{
+  .accordion-button::after {
     font-size: 7px !important;
   }
-  .accordion-button:not(.collapsed)::after{
+  .accordion-button:not(.collapsed)::after {
     font-size: 7px !important;
   }
 }
@@ -591,19 +586,20 @@ header {
 
 .resume .accordion-button::after {
   transition: transform 0.5s ease;
-  filter: brightness(0) saturate(100%) invert(64%) sepia(85%) saturate(681%) hue-rotate(75deg) brightness(95%) contrast(103%);
+  filter: brightness(0) saturate(100%) invert(64%) sepia(85%) saturate(681%)
+    hue-rotate(75deg) brightness(95%) contrast(103%);
 }
 
 .resume .accordion-button:not(.collapsed)::after {
   transform: rotate(180deg);
-  filter: brightness(0) saturate(100%) invert(64%) sepia(85%) saturate(681%) hue-rotate(75deg) brightness(95%) contrast(103%);
+  filter: brightness(0) saturate(100%) invert(64%) sepia(85%) saturate(681%)
+    hue-rotate(75deg) brightness(95%) contrast(103%);
 }
-
 
 .resume .accordion-body {
   padding: 1rem 1.25rem;
   font-size: 0.95rem;
-  color:var(--bs-text);
+  color: var(--bs-text);
 }
 
 /* Contact Section */
@@ -637,13 +633,11 @@ header {
   text-decoration: underline;
 }
 
-@media (max-witdh:600px) {
-  .contact a{
+@media (max-witdh: 600px) {
+  .contact a {
     font-size: 11px;
   }
 }
-
-
 
 .contact-form {
   background-color: var(--bs-body-bg);
@@ -671,4 +665,3 @@ header {
   box-shadow: none;
   border-color: var(--bs-primary);
 }
-
