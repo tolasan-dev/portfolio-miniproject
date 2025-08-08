@@ -1,0 +1,116 @@
+[data-bs-theme="light"] {
+  --bs-body-bg-animation-h: rgba(255, 255, 255, 0.2);
+  --bs-body-bg-animation-v: rgba(255, 255, 255, 0.2);
+  --bs-point-bg:rgb(0, 0, 0);
+}
+
+[data-bs-theme="dark"] {
+  --bs-body-bg-animation-h: rgba(255, 255, 255, 0.03);
+  --bs-body-bg-animation-v: rgba(255, 255, 255, 0.02);
+  --bs-point-bg:white;
+}
+
+.gradient-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.gradient-sphere {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+}
+
+.sphere-1 {
+  width: 44vw;
+  height: 35vw;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 102, 0, 0.4),
+    rgba(9, 255, 0, 0.582)
+  );
+  top: 3%;
+  left: -12%;
+  animation: float-1 15s ease-in-out infinite alternate;
+}
+.noise-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+  z-index: 5;
+}
+
+@keyframes float-1 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(10%, 10%) scale(1.1);
+  }
+}
+
+.grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 40px 40px;
+  background-image: linear-gradient(
+      to right,
+      var(--bs-body-bg-animation-h) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, var(--bs-body-bg-animation-v) 1px, transparent 1px);
+  z-index: 2;
+}
+
+.glow {
+  position: absolute;
+  width: 40vw;
+  height: 40vh;
+  background: radial-gradient(circle, rgba(72, 0, 255, 0.15), transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  animation: pulse 8s infinite alternate;
+  filter: blur(30px);
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  100% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+.particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  background: var(--bs-point-bg);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+}

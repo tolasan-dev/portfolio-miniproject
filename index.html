@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <!-- link style css  -->
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
     <!-- link font awesome icon -->
 
     <!-- link for library swiper -->
@@ -22,6 +26,13 @@
   </head>
 
   <body>
+    <div class="gradient-background z-n1">
+      <div class="gradient-sphere sphere-1"></div>
+      <div class="glow"></div>
+      <div class="grid-overlay"></div>
+      <div class="noise-overlay"></div>
+      <div class="particles-container" id="particles-container"></div>
+    </div>
     <header class="mt-4">
       <div class="container-fluid-sm container-lg px-2 px-0">
         <nav class="navbar navbar-expand-lg px-3 py-2 align-items-center">
@@ -52,7 +63,7 @@
             class="collapse navbar-collapse justify-content-between"
             id="navbarNav">
             <!-- Center nav items -->
-            <ul class="navbar-nav mx-lg-auto text-center">
+            <ul class="navbar-nav mx-lg-auto ">
               <li class="nav-item">
                 <a class="nav-link active hvr-underline-from-center"
                   href="#">Home</a>
@@ -164,28 +175,28 @@
         <div class="row text-center g-4">
           <div class="col-6 col-md-3">
             <div class="counter-box">
-              <h2 data-count="150" class="counter">0</h2>
+              <span data-count="150" class="counter">0</span>
               <span>+</span>
               <p>Projects</p>
             </div>
           </div>
           <div class="col-6 col-md-3">
             <div class="counter-box">
-              <h2 data-count="75" class="counter">0</h2>
+              <span data-count="75" class="counter">0</span>
               <span>+</span>
               <p>Clients</p>
             </div>
           </div>
           <div class="col-6 col-md-3">
             <div class="counter-box">
-              <h2 data-count="300" class="counter">0</h2>
+              <span data-count="300" class="counter">0</span>
               <span>+</span>
               <p>Followers</p>
             </div>
           </div>
           <div class="col-6 col-md-3">
             <div class="counter-box">
-              <h2 data-count="25" class="counter">0</h2>
+              <span data-count="25" class="counter">0</span>
               <span>+</span>
               <p>Awards</p>
             </div>
@@ -193,13 +204,17 @@
         </div>
       </section>
       <!-- end section counter -->
-      <!-- about section -->
+
       <!-- about section -->
       <section id="about" class="about-section py-5">
-        <h1 class="text-center fw-bolder mb-3 py-4"><span
-            class="title-name">About</span> Me</h1>
-        <div class="container-fluid-sm container-lg px-2">
-          <div class="row align-items-center justify-content-between">
+        <div class="section-header mb-5 text-center" data-aos="fade-up">
+          <h1 class="section-title fw-bolder">
+            <span class="px-2 px-xl-4 px-lg-3">About</span>
+          </h1>
+          <span class="section-subtitle fst-italic fs-5">Introduce Me</span>
+        </div>
+        <div class="container-fluid-sm container-lg px-2 ">
+          <div class="row mx-4 mx-lg-0">
             <div class="col-12 col-lg-6 position-relative z-3"
               data-aos-duration="700" data-aos="fade-right">
               <div class="dots-grid">
@@ -350,18 +365,18 @@
               </div>
               <div class="mx-0 mx-lg-2 mx-xl-5">
                 <img src="assets/img/jacob-thornton.jpg" alt
-                  class="img-fluid rounded-3" />
+                  class="img-fluid rounded-3 position-relative" />
               </div>
             </div>
             <div class="col-12 col-lg-6" data-aos-duration="700"
               data-aos="fade-left">
-              <div class="section-header">
-                <h2 class="section-title">
+              <div class="about-header">
+                <h2 class="about-title">
                   Creative and detail-oriented
                   <span class="title-name">Junior Web Designer</span>
                 </h2>
               </div>
-              <p class="section-description">
+              <p class="about-description">
                 with a strong interest in building responsive, user-friendly
                 websites. Skilled in front-end technologies like HTML, CSS, and
                 React, with hands-on experience designing and developing a fully
@@ -379,196 +394,193 @@
       <!-- end section about me -->
       <!-- section portfolio  -->
       <section id="portfolio-area" class="portfolio-area mt-5 mb-5">
-        <div class="portfolio-header mb-5 text-center">
-          <h1 class="portfolio-title fw-bolder">
+        <div class="section-header mb-5 text-center" data-aos="fade-up">
+          <h1 class="section-title fw-bolder">
             <span class="px-2 px-xl-4 px-lg-3">Portfolio</span>
           </h1>
-          <span class="portfolio-subtitle fst-italic fs-5">team & own
+          <span class="section-subtitle fst-italic fs-5">team & own
             works</span>
         </div>
-        <div class="container-fluid-sm container-lg px-2 p-0">
-          <div class="w-100 px-0 mx-0">
-            <div class="row px-0">
-              <!-- row 1 -->
-              <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
-                <div class="card">
+        <div class="container-lg ">
+          <div class="row">
+            <!-- row 1 -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4 "
+              data-aos="fade-up">
+              <div class="card">
+                <a href="https://start-bootstrap-p7.vercel.app/">
                   <div class="overflow-hidden">
                     <img
                       class="card-img-top"
-                      src="assets/img/p-1.png"
+                      src="assets/img/project1.png"
                       alt="Project1" />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Project name 3</h5>
-                    <p class="card-text">Description about project</p>
-                    <div class="program-language mb-3">
+                    <h5 class="card-title">Start Bootstrap</h5>
+                    <p class="card-text">Begin start learning Advance CSS</p>
+                    <div class="categories mb-3">
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">tailwindCss</span>
+                        class="html px-2 py-1 rounded-5 me-1 mt-1">html</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">vue</span>
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">java</span>
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">mysql</span>
+                        class="css px-2 py-1 rounded-5 me-1 mt-1">css</span>
                     </div>
-                    <a href="#" class="btn btn-primary">
+                    <a href="https://start-bootstrap-p7.vercel.app/"
+                      class="btn btn-primary">
                       <i class="fas fa-link"></i>
                     </a>
                     <a href="#" class="btn btn-second-primary">
                       <i class="fab fa-github"></i>
                     </a>
                   </div>
-                </div>
+                </a>
               </div>
-              <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
-                <div class="card">
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4 "
+              data-aos="fade-up">
+              <div class="card">
+                <a
+                  href="https://resopsive-website-ui-home-construct.vercel.app/">
                   <div class="overflow-hidden">
                     <img
                       class="card-img-top"
-                      src="assets/img/p-1.png"
+                      src="assets/img/project2.png"
                       alt="Project1" />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Project name 3</h5>
-                    <p class="card-text">Description about project</p>
-                    <div class="program-language mb-3">
+                    <h5 class="card-title">UP Constructor</h5>
+                    <p class="card-text">Design website using AOS animation</p>
+                    <div class="categories mb-3">
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">tailwindCss</span>
+                        class="html px-2 py-1 rounded-5 me-1 mt-1">html</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">vue</span>
+                        class="css px-2 py-1 rounded-5 me-1 mt-1">css</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">java</span>
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">mysql</span>
+                        class="js px-2 py-1 rounded-5 me-1 mt-1">javaScript</span>
                     </div>
-                    <a href="#" class="btn btn-primary">
+                    <a
+                      href="https://resopsive-website-ui-home-construct.vercel.app/"
+                      class="btn btn-primary">
                       <i class="fas fa-link"></i>
                     </a>
                     <a href="#" class="btn btn-second-primary">
                       <i class="fab fa-github"></i>
                     </a>
                   </div>
-                </div>
+                </a>
               </div>
-              <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
-                <div class="card">
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4 "
+              data-aos="fade-up">
+              <div class="card">
+                <a href="https://responsive-pracitce-wat.vercel.app/">
                   <div class="overflow-hidden">
-                    <img
-                      class="card-img-top"
-                      src="assets/img/p-3.png"
+                    <img class="card-img-top" src="assets/img/project3.png"
                       alt="Project1" />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Project name 3</h5>
-                    <p class="card-text">Description about project</p>
-                    <div class="program-language mb-3">
+                    <h5 class="card-title">Start Bootstrap2</h5>
+                    <p class="card-text">Design Responsive CSS</p>
+                    <div class="categories mb-3">
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">tailwindCss</span>
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">vue</span>
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">java</span>
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">mysql</span>
+                        class="html px-2 py-1 rounded-5 me-1 mt-1">html</span>
+                      <span class="css px-2 py-1 rounded-5 me-1 mt-1">css</span>
                     </div>
-                    <a href="#" class="btn btn-primary">
+                    <a href="https://responsive-pracitce-wat.vercel.app/"
+                      class="btn btn-primary">
                       <i class="fas fa-link"></i>
                     </a>
                     <a href="#" class="btn btn-second-primary">
                       <i class="fab fa-github"></i>
                     </a>
                   </div>
-                </div>
+                </a>
               </div>
-              <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
-                <div class="card">
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4 "
+              data-aos="fade-up">
+              <div class="card">
+                <a href="https://bootstrap1-topaz.vercel.app/">
                   <div class="overflow-hidden">
-                    <img
-                      class="card-img-top"
-                      src="assets/img/p-5.png"
+                    <img class="card-img-top" src="assets/img/project4.png"
                       alt="Project1" />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Project name 3</h5>
-                    <p class="card-text">Description about project</p>
-                    <div class="program-language mb-3">
+                    <h5 class="card-title">Responsive with Bootstrap</h5>
+                    <p class="card-text">Bootstrap Responsive with
+                      breakpoints</p>
+                    <div class="categories mb-3">
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">tailwindCss</span>
+                        class="html px-2 py-1 rounded-5 me-1 mt-1">html</span>
+                      <span class="css px-2 py-1 rounded-5 me-1 mt-1">css</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">vue</span>
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">java</span>
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">mysql</span>
+                        class="bootstrap px-2 py-1 rounded-5 me-1 mt-1">bootStrap</span>
                     </div>
-                    <a href="#" class="btn btn-primary">
+                    <a href="https://bootstrap1-topaz.vercel.app/"
+                      class="btn btn-primary">
                       <i class="fas fa-link"></i>
                     </a>
                     <a href="#" class="btn btn-second-primary">
                       <i class="fab fa-github"></i>
                     </a>
                   </div>
-                </div>
+                </a>
               </div>
-              <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
-                <div class="card">
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4 "
+              data-aos="fade-up">
+              <div class="card">
+                <a href="https://practice7-sabay-news.netlify.app/">
                   <div class="overflow-hidden">
-                    <img
-                      class="card-img-top"
-                      src="assets/img/p-6.png"
+                    <img class="card-img-top" src="assets/img/project5.png"
                       alt="Project1" />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Project name 3</h5>
-                    <p class="card-text">Description about project</p>
-                    <div class="program-language mb-3">
+                    <h5 class="card-title">Sabay News</h5>
+                    <p class="card-text">clone ui home page sabay news website
+                    </p>
+                    <div class="categories mb-3">
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">tailwindCss</span>
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">vue</span>
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">java</span>
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">mysql</span>
+                        class="html px-2 py-1 rounded-5 me-1 mt-1">html</span>
+                      <span class="css px-2 py-1 rounded-5 me-1 mt-1">css</span>
                     </div>
-                    <a href="#" class="btn btn-primary">
+                    <a href="https://practice7-sabay-news.netlify.app/"
+                      class="btn btn-primary">
                       <i class="fas fa-link"></i>
                     </a>
                     <a href="#" class="btn btn-second-primary">
                       <i class="fab fa-github"></i>
                     </a>
                   </div>
-                </div>
+                </a>
               </div>
-              <div class="col-12 col-lg-6 col-md-6 col-xl-4 mb-4">
-                <div class="card">
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4 "
+              data-aos="fade-up">
+              <div class="card">
+                <a href="https://velvety-strudel-855109.netlify.app/">
                   <div class="overflow-hidden">
-                    <img
-                      class="card-img-top"
-                      src="assets/img/p-7.png"
+                    <img class="card-img-top" src="assets/img/project6.png"
                       alt="Project1" />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Project name 3</h5>
-                    <p class="card-text">Description about project</p>
-                    <div class="program-language mb-3">
+                    <h5 class="card-title">Portfolio</h5>
+                    <p class="card-text">Design Dark mode & light mode
+                      portfolio</p>
+                    <div class="categories mb-3">
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">tailwindCss</span>
+                        class="html px-2 py-1 rounded-5 me-1 mt-1">html</span>
+                      <span class="css px-2 py-1 rounded-5 me-1 mt-1">css</span>
                       <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">vue</span>
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">java</span>
-                      <span
-                        class="lang-1 px-2 py-1 bg-success-subtle rounded-5 me-1 text-dark mt-1">mysql</span>
+                        class="js px-2 py-1 rounded-5 me-1 mt-1">javaScript</span>
                     </div>
-                    <a href="#" class="btn btn-primary">
+                    <a href="https://velvety-strudel-855109.netlify.app/"
+                      class="btn btn-primary">
                       <i class="fas fa-link"></i>
                     </a>
                     <a href="#" class="btn btn-second-primary">
                       <i class="fab fa-github"></i>
                     </a>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -577,15 +589,15 @@
       <!-- skill for md-xxl -->
       <section id="skill" class="skill mt-md-3 mt-lg-5 mb-0">
         <div class="container-fluid-sm container-lg px-2">
-          <h2 class="d-block text-center fw-bold">My Top
-            Skills</h2>
-          <span class="text-header d-block text-center mb-0 m-auto">
-            Passionate about <span class="import-color">frontend design</span>
-            using React,
-            Bootstrap, and CSS3 to craft user-friendly interfaces.
-          </span>
-
-          <div class="row mt-5 g-lg-4 skill-md">
+          <div class="section-header mb-5 text-center" data-aos="fade-up">
+            <h1 class="section-title fw-bolder mb-3">
+              <span class="px-2 px-xl-4 px-lg-3">Top Skills</span>
+            </h1>
+            <span class="section-subtitle fst-italic fs-5">Passionate about
+              frontend design using React, Bootstrap, and CSS3 to craft
+              user-friendly interfaces.</span>
+          </div>
+          <div class="row mt-5 g-lg-4 skill-md" data-aos="fade-up">
             <div class="col-sm-6 col-lg-3">
               <div class="card skill-card" data-percent="90">
                 <div class="progress-bg"></div>
@@ -709,8 +721,8 @@
         </div>
       </section>
       <!-- sill for sm -->
-      <section class="skill-sm mt-sm-1">
-        <label class="text-light ms-2 fw-bold" for="#">HTML</label>
+      <section class="skill-sm mt-sm-1" data-aos="fade-up">
+        <label class=" ms-2 fw-bold" for="#">HTML</label>
         <div
           class="progress"
           role="proressbar"
@@ -724,7 +736,7 @@
             90%
           </div>
         </div>
-        <label class="text-light ms-2 fw-bold" for="#">CSS</label>
+        <label class=" ms-2 fw-bold" for="#">CSS</label>
         <div
           class="progress"
           role="progressbar"
@@ -738,7 +750,7 @@
             75%
           </div>
         </div>
-        <label class="text-light ms-2 fw-bold" for="#">Boostrap</label>
+        <label class="ms-2 fw-bold" for="#">Boostrap</label>
         <div
           class="progress"
           role="progressbar"
@@ -752,7 +764,7 @@
             60%
           </div>
         </div>
-        <label class="text-light ms-2 fw-bold" for="#">Javascript</label>
+        <label class=" ms-2 fw-bold" for="#">Javascript</label>
         <div
           class="progress"
           role="progressbar"
@@ -766,7 +778,7 @@
             85%
           </div>
         </div>
-        <label class="text-light ms-2 fw-bold" for="#">HTML</label>
+        <label class=" ms-2 fw-bold" for="#">HTML</label>
         <div
           class="progress"
           role="progressbar"
@@ -780,7 +792,7 @@
             90%
           </div>
         </div>
-        <label class="text-light ms-2 fw-bold" for="#">CSS</label>
+        <label class="ms-2 fw-bold" for="#">CSS</label>
         <div
           class="progress"
           role="progressbar"
@@ -794,7 +806,7 @@
             75%
           </div>
         </div>
-        <label class="text-light ms-2 fw-bold" for="#">Boostrap</label>
+        <label class=" ms-2 fw-bold" for="#">Boostrap</label>
         <div
           class="progress"
           role="progressbar"
@@ -808,7 +820,7 @@
             60%
           </div>
         </div>
-        <label class="text-light ms-2 fw-bold" for="#">Javascript</label>
+        <label class="ms-2 fw-bold" for="#">Javascript</label>
         <div
           class="progress"
           role="progressbar"
@@ -824,271 +836,254 @@
         </div>
       </section>
 
-      <section id="resume" class="resume mt-5 mb-5">
-        <div class="container-fluid-sm container-lg px-2">
-          <div class="row mt-5">
+      <!-- section resume -->
+      <section class="resume my-5">
+        <div class="container">
+          <div class="section-header mb-5 text-center" data-aos="fade-up">
+            <h1 class="section-title fw-bolder mb-3">
+              <span class="px-2 px-xl-4 px-lg-3">Education & Experience</span>
+            </h1>
+            <span class="section-subtitle fst-italic fs-5">
+              Passionate about frontend design using React, Bootstrap, and CSS3
+              to craft user-friendly interfaces.
+            </span>
+          </div>
 
-            <div class="col-sm-12 col-md-6">
-              <h3 class="import-color fs-2 text-center mb-4">Education</h3>
-              <div class="accordion accordion-flush" id="accordionFlushLeft">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapse1"
-                      aria-expanded="false"
-                      aria-controls="flush-collapse1">
-                      <span>Bachelor of Computer Science -
-                        ITC</span>
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapse1"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushLeft">
-                    <div class="accordion-body">
-                      Graduated in 2024 with a strong foundation in data
-                      structures, algorithms, software engineering, and
-                      databases. Completed a capstone project on a web-based
-                      student management system.
-                    </div>
-                  </div>
+          <div class="timeline p-0">
+
+            <div class="timeline-item left position-relative " data-aos="fade-up">
+              <div class="timeline-icon"><i
+                  class="fas fa-graduation-cap"></i></div>
+              <div class="timeline-card">
+                <h2 class="timeline-title">Bachelor of Computer Science</h2>
+                <h3 class="timeline-subtitle">University of Manchester</h3>
+                <span class="timeline-date">2015 - 2019 <span
+                    class="timeline-badge degree">Degree</span></span>
+                <div class="d-flex justify-content-end">
+                  <button class="bg-transparent border-0 me-5"
+                    onclick="showitemText(1)">View</button>
                 </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapse2"
-                      aria-expanded="false"
-                      aria-controls="flush-collapse2">
-                      <span>High School Diploma - Bak Touk
-                        High School</span>
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapse2"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushLeft">
-                    <div class="accordion-body">
-                      Graduated with distinction in 2020. Focused on
-                      mathematics, physics, and computer science as elective
-                      subjects.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapse3"
-                      aria-expanded="false"
-                      aria-controls="flush-collapse3">
-                      <span>Full Stack Web Development
-                        Bootcamp</span>
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapse3"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushLeft">
-                    <div class="accordion-body">
-                      Completed an intensive 3-month coding bootcamp in 2023,
-                      covering HTML, CSS, JavaScript, Laravel, React, MySQL, and
-                      Git.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapse4"
-                      aria-expanded="false"
-                      aria-controls="flush-collapse4">
-                      <span>Google IT Support
-                        Certificate</span>
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapse4"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushLeft">
-                    <div class="accordion-body">
-                      Earned in 2022. Learned troubleshooting, networking,
-                      security, system administration, and technical support.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapse5"
-                      aria-expanded="false"
-                      aria-controls="flush-collapse5">
-                      <span>Certificate in Database Design -
-                        Udemy</span>
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapse5"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushLeft">
-                    <div class="accordion-body">
-                      Focused on designing relational databases using MySQL,
-                      normalization, ERD, and SQL query optimization techniques.
-                    </div>
+                <div class="timeline-text" id="itemText1"
+                  style="display: none;">
+                  <p>Focused on software engineering, databases, and AI systems.
+                    Participated in coding competitions and completed a capstone
+                    project in AI-driven healthcare.</p>
+                  <div class="d-flex justify-content-end">
+                    <button class="bg-transparent border-0 mt-0 me-5"
+                      onclick="closeText(1)">Close</button>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-sm-12 col-md-6">
-              <h3 class="import-color fs-2 text-center mb-4">Experience</h3>
-              <div class="accordion accordion-flush" id="accordionFlushRight">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapse6"
-                      aria-expanded="false"
-                      aria-controls="flush-collapse6">
-                      <span>Backend Developer Intern - Smart
-                        Axiata</span>
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapse6"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushRight">
-                    <div class="accordion-body">
-                      Assisted in developing REST APIs using Laravel for
-                      internal tools. Gained hands-on experience with Git,
-                      MySQL, and Postman.
-                    </div>
-                  </div>
+            <div class="timeline-item right position-relative" data-aos="fade-up">
+              <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+              <div class="timeline-card">
+                <h2 class="timeline-title">Junior Developer</h2>
+                <h3 class="timeline-subtitle">Smart Axiata</h3>
+                <span class="timeline-date">2019 - 2021 <span
+                    class="timeline-badge work">Work</span></span>
+                <div class="d-flex justify-content-end">
+                  <button class="bg-transparent border-0 me-5"
+                    onclick="showitemText(2)">View</button>
                 </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapse7"
-                      aria-expanded="false"
-                      aria-controls="flush-collapse7">
-                      <span>Freelance Web Developer</span>
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapse7"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushRight">
-                    <div class="accordion-body">
-                      Built small business websites using PHP and Bootstrap.
-                      Delivered responsive and SEO-friendly solutions for local
-                      clients.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapse8"
-                      aria-expanded="false"
-                      aria-controls="flush-collapse8">
-                      <span>Teaching Assistant - ITC</span>
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapse8"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushRight">
-                    <div class="accordion-body">
-                      Supported students in understanding programming concepts
-                      and database design. Helped run lab sessions and grading.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapse9"
-                      aria-expanded="false"
-                      aria-controls="flush-collapse9">
-                      <span>Personal Projects</span>
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapse9"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushRight">
-                    <div class="accordion-body">
-                      Built a recipe manager app, a portfolio website, and a POS
-                      system using Laravel, MySQL, and Bootstrap as part of
-                      self-learning.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapse10"
-                      aria-expanded="false"
-                      aria-controls="flush-collapse10">
-                      <span>Volunteer Web Developer - Local
-                        NGO</span>
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapse10"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushRight">
-                    <div class="accordion-body">
-                      Designed and maintained a donation tracking website for a
-                      local NGO to improve transparency and community outreach.
-                    </div>
+                <div class="timeline-text" id="itemText2"
+                  style="display: none;">
+                  <p>Built scalable web applications using Laravel and React.
+                    Optimized system performance and collaborated in Agile
+                    sprints.</p>
+                  <div class="d-flex justify-content-end">
+                    <button class="bg-transparent border-0 mt-0 me-5"
+                      onclick="closeText(2)">Close</button>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div class="timeline-item left position-relative" data-aos="fade-up">
+              <div class="timeline-icon"><i
+                  class="fas fa-graduation-cap"></i></div>
+              <div class="timeline-card">
+                <h2 class="timeline-title">MSc in Information Technology</h2>
+                <h3 class="timeline-subtitle">RUPP</h3>
+                <span class="timeline-date">2019 - 2021 <span
+                    class="timeline-badge degree">Degree</span></span>
+                <div class="d-flex justify-content-end">
+                  <button class="bg-transparent border-0 me-5"
+                    onclick="showitemText(3)">View</button>
+                </div>
+                <div class="timeline-text" id="itemText3"
+                  style="display: none;">
+                  <p>Specialized in cybersecurity, cloud computing, and data
+                    science. Published research on blockchain-based voting
+                    systems.</p>
+                  <div class="d-flex justify-content-end">
+                    <button class="bg-transparent border-0 mt-0 me-5"
+                      onclick="closeText(3)">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item right position-relative" data-aos="fade-up">
+              <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+              <div class="timeline-card">
+                <h2 class="timeline-title">Full Stack Developer</h2>
+                <h3 class="timeline-subtitle">Sabay Digital</h3>
+                <span class="timeline-date">2021 - Present <span
+                    class="timeline-badge work">Work</span></span>
+                <div class="d-flex justify-content-end">
+                  <button class="bg-transparent border-0 me-5"
+                    onclick="showitemText(4)">View</button>
+                </div>
+                <div class="timeline-text" id="itemText4"
+                  style="display: none;">
+                  <p>Developed apps using React, Node.js, and MongoDB. Led CI/CD
+                    automation with Docker and GitHub Actions in Agile
+                    teams.</p>
+                  <div class="d-flex justify-content-end">
+                    <button class="bg-transparent border-0 mt-0 me-5"
+                      onclick="closeText(4)">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item left position-relative" data-aos="fade-up">
+              <div class="timeline-icon"><i
+                  class="fas fa-pencil-ruler"></i></div>
+              <div class="timeline-card">
+                <h2 class="timeline-title">UI/UX Designer</h2>
+                <h3 class="timeline-subtitle">Freelance</h3>
+                <span class="timeline-date">2022 - Present <span
+                    class="timeline-badge freelance">Freelance</span></span>
+                <div class="d-flex justify-content-end">
+                  <button class="bg-transparent border-0 me-5"
+                    onclick="showitemText(5)">View</button>
+                </div>
+                <div class="timeline-text" id="itemText5"
+                  style="display: none;">
+                  <p>Designed mobile and web interfaces for 15+ clients using
+                    Figma and Adobe XD. Focused on user-centered design and
+                    accessibility.</p>
+                  <div class="d-flex justify-content-end">
+                    <button class="bg-transparent border-0 mt-0 me-5"
+                      onclick="closeText(5)">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item right position-relative" data-aos="fade-up">
+              <div class="timeline-icon"><i
+                  class="fas fa-graduation-cap"></i></div>
+              <div class="timeline-card">
+                <h2 class="timeline-title">Certificate in UI/UX Design</h2>
+                <h3 class="timeline-subtitle">Coursera (Google UX Design)</h3>
+                <span class="timeline-date">2022 <span
+                    class="timeline-badge certificate">Certificate</span></span>
+                <div class="d-flex justify-content-end">
+                  <button class="bg-transparent border-0 me-5"
+                    onclick="showitemText(6)">View</button>
+                </div>
+                <div class="timeline-text" id="itemText6"
+                  style="display: none;">
+                  <p>Completed Google UX Design course covering research,
+                    wireframing, prototyping, and design thinking with
+                    real-world case studies.</p>
+                  <div class="d-flex justify-content-end">
+                    <button class="bg-transparent border-0 mt-0 me-5"
+                      onclick="closeText(6)">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item left position-relative" data-aos="fade-up">
+              <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+              <div class="timeline-card">
+                <h2 class="timeline-title">Frontend Developer (Remote)</h2>
+                <h3 class="timeline-subtitle">CodeNest Solutions</h3>
+                <span class="timeline-date">2021 - 2022 <span
+                    class="timeline-badge remote">Remote</span></span>
+                <div class="d-flex justify-content-end">
+                  <button class="bg-transparent border-0 me-5"
+                    onclick="showitemText(7)">View</button>
+                </div>
+                <div class="timeline-text" id="itemText7"
+                  style="display: none;">
+                  <p>Developed responsive apps with React, TailwindCSS, and
+                    Next.js. Used GitHub and Jira in remote teams across
+                    multiple time zones.</p>
+                  <div class="d-flex justify-content-end">
+                    <button class="bg-transparent border-0 mt-0 me-5"
+                      onclick="closeText(7)">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item right position-relative" data-aos="fade-up">
+              <div class="timeline-icon"><i
+                  class="fas fa-graduation-cap"></i></div>
+              <div class="timeline-card">
+                <h2 class="timeline-title">High School Diploma</h2>
+                <h3 class="timeline-subtitle">Phnom Penh International
+                  School</h3>
+                <span class="timeline-date">2010 - 2015 <span
+                    class="timeline-badge diploma">Diploma</span></span>
+                <div class="d-flex justify-content-end">
+                  <button class="bg-transparent border-0 me-5"
+                    onclick="showitemText(8)">View</button>
+                </div>
+                <div class="timeline-text" id="itemText8"
+                  style="display: none;">
+                  <p>Graduated with honors in science stream. Leader of tech
+                    club, winning national robotics and web app contests.</p>
+                  <div class="d-flex justify-content-end">
+                    <button class="bg-transparent border-0 mt-0 me-5"
+                      onclick="closeText(8)">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item left position-relative" data-aos="fade-up">
+              <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+              <div class="timeline-card">
+                <h2 class="timeline-title">Teaching Assistant</h2>
+                <h3 class="timeline-subtitle">RUPP</h3>
+                <span class="timeline-date">2020 - 2021 <span
+                    class="timeline-badge academic">Academic</span></span>
+                <div class="d-flex justify-content-end">
+                  <button class="bg-transparent border-0 me-5"
+                    onclick="showitemText(9)">View</button>
+                </div>
+                <div class="timeline-text" id="itemText9"
+                  style="display: none;">
+                  <p>Assisted CS faculty with labs and coursework. Helped
+                    students with programming assignments in Python and Java,
+                    managed grading and review sessions.</p>
+                  <div class="d-flex justify-content-end">
+                    <button class="bg-transparent border-0 mt-0 me-5"
+                      onclick="closeText(9)">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
 
-      <section id="contact" class="contact py-5">
+      <!-- end section resume -->
+
+      <!-- section contact -->
+      <section id="contact" class="contact py-5 mt-5">
         <div class="container-fluid-sm container-lg px-2">
-          <div class="row g-5">
-            <div class="col-12 col-lg-4">
+          <div class="row gy-5 gy-md-5 gx-0 gx-md-3 g-lg-5">
+            <!-- contact info -->
+            <div class="col-12 col-lg-4" data-aos="fade-up">
               <div class="contact-info p-4 rounded h-100">
                 <h4 class="import-color mb-3">Contact Me</h4>
                 <h2 class="fw-bold">
@@ -1101,57 +1096,57 @@
                   <li class="d-flex mb-3 align-items-start">
                     <i class="fas fa-map-marker-alt icon me-3 mt-1"></i>
                     <div class="d-flex align-items-center">
-                      <label>Address :</label><br />
+
                       <a
                         href="https://maps.google.com"
                         class="  text-decoration-none"
-                        target="_blank">123 Main St, New York, NY</a>
+                        target="_blank">St-2004 Phnom Penh</a>
                     </div>
                   </li>
                   <li class="d-flex mb-3 align-items-start">
                     <i class="fab fa-facebook icon me-3 mt-1"></i>
                     <div class="d-flex align-items-center">
-                      <label>Facebook :</label><br />
+
                       <a
                         href="https://facebook.com/yourprofile"
                         class="  text-decoration-none"
-                        target="_blank">/yourprofile</a>
+                        target="_blank">Jacob</a>
                     </div>
                   </li>
                   <li class="d-flex mb-3 align-items-start">
                     <i class="fab fa-telegram icon me-3 mt-1"></i>
                     <div class="d-flex align-items-center">
-                      <label>Telegram :</label><br />
+
                       <a
                         href="https://t.me/yourusername"
                         class="  text-decoration-none"
-                        target="_blank">@yourusername</a>
+                        target="_blank">@Jacob</a>
                     </div>
                   </li>
                   <li class="d-flex mb-3 align-items-start">
                     <i class="fab fa-instagram icon me-3 mt-1"></i>
                     <div class="d-flex align-items-center">
-                      <label>Instagram :</label><br />
+
                       <a
                         href="https://instagram.com/yourhandle"
                         class="  text-decoration-none"
-                        target="_blank">@yourhandle</a>
+                        target="_blank">@Jacob99</a>
                     </div>
                   </li>
                   <li class="d-flex mb-3 align-items-start">
 
                     <i class="fas fa-envelope icon me-3 mt-1"></i>
                     <div class="d-flex align-items-center">
-                      <label>Email :</label><br />
+
                       <a
                         href="mailto:info@yoursite.com"
-                        class=" text-decoration-none">info@yoursite.com</a>
+                        class=" text-decoration-none">Jacob123@gmail.com</a>
                     </div>
                   </li>
                   <li class="d-flex align-items-start">
                     <i class="fas fa-phone-alt icon me-3 mt-1"></i>
                     <div class="d-flex align-items-center">
-                      <label>Call :</label><br />
+
                       <a
                         href="tel:+1235235598"
                         class="  text-decoration-none">+1235 2355
@@ -1162,9 +1157,10 @@
               </div>
             </div>
 
-            <div class="col-12 col-lg-8">
+            <!-- contact form -->
+            <div class="col-12 col-lg-8" data-aos="fade-up">
               <div class="contact-form p-4 rounded shadow">
-                <h3 class="mb-4">LEAVE A MESSAGE</h3>
+                <h3 class="mb-4">LET'S CONNECT!</h3>
                 <form>
                   <div class="row mb-3">
                     <div class="col-md-6 mb-3 mb-md-0">
@@ -1202,79 +1198,73 @@
                       rows="4"
                       placeholder="Message"></textarea>
                   </div>
-                  <button type="submit" class="btn">SUBMIT NOW</button>
+                  <button type="submit" class="btn"
+                    onclick="netification()">SUBMIT NOW</button>
                 </form>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- end section contact -->
 
     </main>
-    <!-- <footer class="bg-gradient p-5"> -->
-    <footer class="bg-gradient p-5 overflow-hidden">
-      <div class="container-fluid-sm container-lg px-2">
+
+    <footer class="footer text-light py-5">
+      <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-12">
+
+          <!-- Column 1: Logo / Team -->
+          <div class="col-md-4 mb-4 text-center text-md-start">
+            <h3 class="mb-2"><i class="bi bi-people-fill me-2"></i>Group Team 12</h3>
+            <p class="mb-1"><i class="bi bi-person-circle me-2 fs-1 fw-bold"></i>Jacob</p>
+            <p class="small text-secondary">We are passionate web creators.</p>
+          </div>
+
+          <div class="col-md-4 mb-4 text-center">
+            <h5 class="text-uppercase text-accent mb-3">Quick Links</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#"><i
+                    class="bi bi-house-door-fill me-2"></i>Home</a></li>
+              <li><a href="#"><i
+                    class="bi bi-info-circle-fill me-2"></i>About</a></li>
+              <li><a href="#"><i
+                    class="bi bi-briefcase-fill me-2"></i>Skills</a></li>
+              <li><a href="#"><i
+                    class="bi bi-image-fill me-2"></i>Resume</a></li>
+              <li><a href="#"><i
+                    class="bi bi-envelope-fill me-2"></i>Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mb-4 text-center text-md-end">
+            <h5 class="text-uppercase text-accent mb-3">Follow Us</h5>
             <div
-              class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
-              <h1 class="mb-3 mb-lg-0">Jacobs</h1>
-              <ul class="list-unstyled d-flex flex-wrap gap-3 mb-0">
-                <li>
-                  <a class="nav-link active hvr-underline-from-center"
-                    href="#">Home</a>
-                </li>
-                <li>
-                  <a class="nav-link hvr-underline-from-center"
-                    href="#">About</a>
-                </li>
-                <li>
-                  <a class="nav-link hvr-underline-from-center"
-                    href="#">Projects</a>
-                </li>
-                <li>
-                  <a class="nav-link hvr-underline-from-center"
-                    href="#">Skills</a>
-                </li>
-                <li>
-                  <a class="nav-link hvr-underline-from-center"
-                    href="#">Resume</a>
-                </li>
-                <li>
-                  <a class="nav-link hvr-underline-from-center"
-                    href="#">Contact</a>
-                </li>
-              </ul>
-              <div class="social-icons d-flex gap-3">
-                <a
-                  href="https://github.com/yourusername"
-                  target="_blank"
-                  class="icon github"
-                  title="GitHub">
-                  <i class="fab fa-github fa-lg icon"></i>
+              class="d-flex justify-content-center justify-content-md-end gap-3 footer-social">
+              <a href="#" class="social-icon">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="bi bi-telegram"></i>
+              </a>
+              <a href="#" class="social-icon"><i
+                  class="bi bi-instagram"></i>
                 </a>
-                <a
-                  href="https://linkedin.com/in/yourusername"
-                  target="_blank"
-                  class="icon linkedin"
-                  title="LinkedIn">
-                  <i class="fab fa-linkedin-in fa-lg icon"></i>
+              <a href="#" class="social-icon"><i
+                  class="bi bi-geo-alt-fill"></i>
                 </a>
-                <a
-                  href="https://twitter.com/yourusername"
-                  target="_blank"
-                  class="icon twitter"
-                  title="Twitter/X">
-                  <i class="fab fa-x-twitter fa-lg icon"></i>
-                </a>
-              </div>
             </div>
           </div>
+
         </div>
       </div>
+      <div><span class="d-block text-center ">@compyright by San Tola</span></div>
     </footer>
+
   </body>
-  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- animation background -->
+  <script src="assets/js/animation_background.js"></script>
   <!-- Theme Toggle Script -->
   <script
     src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -1333,8 +1323,12 @@
   <!-- script handle aos animation-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+        once:true,
+        duration: 600
+    });
   </script>
+  <!-- js card skill  -->
   <script>
     const cards = document.querySelectorAll(".skill-card");
 
@@ -1400,5 +1394,103 @@
       });
     });
   </script>
+  <!-- js resume timeline -->
+  <script>
+  function showitemText(index) {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    const item = timelineItems[index - 1];
+
+    if (!item) return;
+
+    const text = item.querySelector('.timeline-text');
+    const viewBtn = item.querySelector('button[onclick^="showitemText"]');
+
+    if (text && viewBtn) {
+      text.style.display = 'block';
+      viewBtn.style.display = 'none';
+    }
+  }
+
+  function closeText(index) {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    const item = timelineItems[index - 1];
+
+    if (!item) return;
+
+    const text = item.querySelector('.timeline-text');
+    const viewBtn = item.querySelector('button[onclick^="showitemText"]');
+
+    if (text && viewBtn) {
+      text.style.display = 'none';
+      viewBtn.style.display = 'inline-block';
+    }
+  }
+</script>
+  <!-- btn-contact -->
+  <script>
+ function netification() {
+  // Create overlay container
+  const overlay = document.createElement('div');
+  Object.assign(overlay.style, {
+    position: 'fixed',
+    top: 0, left: 0, right: 0, bottom: 0,
+    backgroundColor: 'rgba(0,0,0,0.4)',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 9999,
+    animation: 'fadeInOverlay 0.3s ease forwards',
+  });
+
+  // Create notification box
+  const box = document.createElement('div');
+  box.textContent = 'Your message was sent to me. Thank you 🙏❤️';
+  Object.assign(box.style, {
+    backgroundColor: '#12d833',
+    color: 'white',
+    fontSize: '1.2rem',
+    padding: '1.5rem 2rem',
+    borderRadius: '12px',
+    boxShadow: '0 6px 12px rgba(18, 216, 51, 0.5)',
+    textAlign: 'center',
+    maxWidth: '90%',
+    transform: 'scale(0.8)',
+    opacity: '0',
+    animation: 'fadeInScale 0.3s ease forwards',
+  });
+
+  overlay.appendChild(box);
+  document.body.appendChild(overlay);
+
+  // Remove notification after 3 seconds with fade out
+  setTimeout(() => {
+    box.style.animation = 'fadeOutScale 0.3s ease forwards';
+    overlay.style.animation = 'fadeOutOverlay 0.3s ease forwards';
+
+    overlay.addEventListener('animationend', () => {
+      document.body.removeChild(overlay);
+    }, { once: true });
+  }, 3000);
+}
+
+// Add keyframes dynamically
+const styleSheet = document.createElement('style');
+styleSheet.textContent = `
+  @keyframes fadeInScale {
+    to {opacity: 1; transform: scale(1);}
+  }
+  @keyframes fadeOutScale {
+    to {opacity: 0; transform: scale(0.8);}
+  }
+  @keyframes fadeInOverlay {
+    to {opacity: 1;}
+  }
+  @keyframes fadeOutOverlay {
+    to {opacity: 0;}
+  }
+`;
+document.head.appendChild(styleSheet);
+
+</script>
 
 </html>
