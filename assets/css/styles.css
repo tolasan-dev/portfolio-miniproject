@@ -1,6 +1,7 @@
 /* 1. Global Theme Variables */
 :root {
-  --bs-primary: #12d833;
+  /* --bs-primary: #12d833d2; */
+  --bs-primary: #2ec948;
   --bs-nav-link-hover: #12d833;
   --bs-border-color: #12d833;
   --bg-hover: transparent;
@@ -11,15 +12,18 @@
 }
 
 [data-bs-theme="light"] {
-  --bs-body-bg: #edfff6d2;
+  --bs-body-bg: 
   --bs-text: #1c1917b1;
   --bs-box-shadow-navbar: 0 4px 30px rgba(0, 0, 0, 0.25);
+
+  --bs-categories-program:#15ff0069;
 }
 
 [data-bs-theme="dark"] {
-  --bs-body-bg: linear-gradient(135deg, #08120c, #0a7e31);
+  --bs-body-bg: linear-gradient(135deg, #08120c, #0a7e3163);
   --bs-text: #f1f1f1dd;
   --bs-box-shadow-navbar: 0 4px 30px rgba(255, 255, 255, 0.25);
+  --bs-categories-program: #00ff2a50;
 }
 
 /* 4. Font Face Setup */
@@ -36,6 +40,7 @@ body {
   background: var(--bs-body-bg);
   color: var(--bs-text);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* Optional: Add animation only for dark mode gradient */
@@ -62,7 +67,7 @@ header {
   /* border: 1px solid #12d833; */
 }
 
-.navbar .navbar-brand{
+.navbar .navbar-brand {
   text-shadow: 1px 1px #12d833;
 }
 
@@ -72,6 +77,7 @@ header {
 }
 .navbar .navbar-nav .nav-item .nav-link {
   color: var(--bs-text);
+  padding-inline: 18px;
 }
 .btn-mode {
   padding: 10px;
@@ -97,27 +103,29 @@ header {
 .title-name {
   color: var(--bg-highlight);
 }
-.section-subtitle {
-  color: var(--bs-text);
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-  display: block;
+.section-header {
+  height: 100px;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .section-title {
-  font-size: 48px;
+  color: var(--bs-text);
+  font-size: 3.125rem; /* 50px */
   font-weight: bolder;
-  margin-bottom: 32px;
 }
 
-.section-description {
+.section-title span {
+  border-left: 3px solid var(--bs-primary);
+  border-right: 3px solid var(--bs-primary);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.section-subtitle {
   color: var(--bs-text);
-  font-size: 18px;
-  line-height: 1.8;
-  margin-bottom: 32px;
+  font-size: 1.375rem; /* 22px */
+  font-style: italic;
 }
 
 
@@ -226,7 +234,8 @@ header {
   overflow: hidden;
 }
 
-.count .counter-box h2 {
+.count .counter-box h2,
+.counter-box span {
   font-size: 42px;
   font-weight: bold;
   color: var(--bs-body-color);
@@ -236,21 +245,38 @@ header {
   font-size: 20px;
   color: var(--bs-body-color);
 }
-/* about */
-.image-container {
-  width: 450px;
-  position: relative;
-  overflow: hidden;
-  /* display: flex;
-  justify-content: center; */
-  border-radius: 3px;
+/*-----------  end section counter ------------------- */
+
+/* ---------- section About ---------------------- */
+
+.about-subtitle {
+  color: var(--bs-text);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  display: block;
 }
+
+.about-title {
+  font-size: 48px;
+  font-weight: bolder;
+  margin-bottom: 32px;
+}
+
+.about-description {
+  color: var(--bs-text);
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+/* ------------ end section about---------------- */
 
 .dots-grid {
   position: absolute;
   /* bottom: -85%; */
   /* left: 13%; */
-  z-index: ;
   bottom: -15%;
   left: -5%;
   display: grid;
@@ -260,40 +286,45 @@ header {
   opacity: 1;
   /* transform: translateY(178px); */
 }
+@media (min-width:992px) and (max-width:1199px) {
+  .dots-grid {
+  bottom: 15%;
+  left: -5%;
+  }
+}
 
 .dot {
   width: 3px;
   height: 3px;
   background-color: var(--bs-primary);
   border-radius: 100%;
-
 }
 
-@media (max-width:820px) {
-  .section-title{
+@media (max-width: 820px) {
+  .section-title {
     width: 80%;
     font-size: 30px;
     text-align: center;
     margin: 0 auto;
     margin-top: 120px;
   }
-  .section-description{
+  .section-description {
     font-size: 14px;
     padding: 10px 10px;
   }
-  .btn{
+  .btn {
     padding: 6px 7px;
     margin-left: 20px;
     font-size: 13px;
   }
-  .icon{
+  .icon {
     margin-top: 15px;
     font-size: 5px;
     border: none;
   }
 }
 
-/*-----------  end section counter ------------------- */
+
 
 /* ===== Portfolio Section ===== */
 .portfolio-area {
@@ -301,30 +332,6 @@ header {
   margin-bottom: 5rem;
 }
 
-.portfolio-header {
-  height: 100px;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.portfolio-title {
-  color: var(--bs-text);
-  font-size: 3.125rem; /* 50px */
-  font-weight: bolder;
-}
-
-.portfolio-title span {
-  border-left: 3px solid var(--bs-primary);
-  border-right: 3px solid var(--bs-primary);
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.portfolio-subtitle {
-  color: var(--bs-text);
-  font-size: 1.375rem; /* 22px */
-  font-style: italic;
-}
 
 /* ===== Portfolio Card Styles ===== */
 .portfolio-area .card {
@@ -332,21 +339,26 @@ header {
   border-radius: 10px;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(126, 126, 126, 0.274);
+  height: 480px;
+}
+.portfolio-area .card a{
   color: var(--bs-text);
-  border: 1px solid var(--bs-border-color);
-  box-shadow: 0 4px 8px rgba(10, 240, 48, 0.2);
+  text-decoration: none;
 }
 
 .portfolio-area .card:hover {
-  box-shadow: 0 8px 30px rgba(19, 239, 56, 0.25);
+  box-shadow: 0 8px 30px rgba(19, 239, 56, 0.308);
 }
 
 .card-img-top {
   border-radius: 10px 10px 0 0;
   transition: transform 0.4s ease;
+  object-fit: cover;
+  height: 290px;
 }
 
-.portfolio-area .card:hover .card-img-top {
+.portfolio-area .card:hover a .card-img-top {
   transform: scale(1.1) rotate(2deg);
 }
 
@@ -368,17 +380,42 @@ header {
 }
 
 /* ===== Technology Labels ===== */
-.program-language span {
+.categories span {
   display: inline-block;
-  background-color: var(--bs-primary) !important;
+  background-color: var(--bs-categories-program) !important;
   color: var(--bs-text);
   padding: 0.35rem 0.75rem;
-  font-weight: 600;
   font-size: 0.875rem;
   text-transform: capitalize;
   border-radius: 2rem;
   margin: 0.25rem 0.25rem 0 0;
   cursor: default;
+   border: 1px solid rgba(255, 0, 0, 0) ;
+   transition: .3s;
+}
+.categories .html{
+  background-color: rgba(220, 20, 60,0.35) !important;
+}
+.categories .html:hover{
+  border:1px solid rgb(220, 20, 60) !important;
+}
+.categories .css{
+  background-color: rgba(20, 50, 220, 0.35) !important;
+}
+.categories .css:hover{
+  border:1px solid rgb(20, 50, 220) !important;
+}
+.categories .js{
+  background-color: rgba(220, 217, 20, 0.35) !important;
+}
+.categories .js:hover{
+  border:1px solid rgb(220, 217, 20) !important;
+}
+.categories .bootstrap{
+  background-color: rgba(197, 20, 220, 0.35) !important;
+}
+.categories .bootstrap:hover{
+  border: 1px solid rgb(197, 20, 220) !important;
 }
 
 /* ===== Action Buttons ===== */
@@ -414,8 +451,7 @@ header {
   color: var(--bs-primary);
 }
 
-/* ----skill */
-
+/* ---- section skill------ */
 
 .skill {
   margin-bottom: 90px;
@@ -513,7 +549,6 @@ header {
   .skill-sm {
     display: none;
   }
-
 }
 
 @media (max-width: 600px) {
@@ -560,19 +595,18 @@ header {
   border-radius: 5px !important;
 }
 
-
- .resume .accordion-button span{
+.resume .accordion-button span {
   color: var(--bs-text);
 }
 
-@media (max-width:992px) {
-  .accordion-button span{
+@media (max-width: 992px) {
+  .accordion-button span {
     font-size: 12.2px;
   }
-  .accordion-button::after{
+  .accordion-button::after {
     font-size: 7px !important;
   }
-  .accordion-button:not(.collapsed)::after{
+  .accordion-button:not(.collapsed)::after {
     font-size: 7px !important;
   }
 }
@@ -589,19 +623,20 @@ header {
 
 .resume .accordion-button::after {
   transition: transform 0.5s ease;
-  filter: brightness(0) saturate(100%) invert(64%) sepia(85%) saturate(681%) hue-rotate(75deg) brightness(95%) contrast(103%);
+  filter: brightness(0) saturate(100%) invert(64%) sepia(85%) saturate(681%)
+    hue-rotate(75deg) brightness(95%) contrast(103%);
 }
 
 .resume .accordion-button:not(.collapsed)::after {
   transform: rotate(180deg);
-  filter: brightness(0) saturate(100%) invert(64%) sepia(85%) saturate(681%) hue-rotate(75deg) brightness(95%) contrast(103%);
+  filter: brightness(0) saturate(100%) invert(64%) sepia(85%) saturate(681%)
+    hue-rotate(75deg) brightness(95%) contrast(103%);
 }
-
 
 .resume .accordion-body {
   padding: 1rem 1.25rem;
   font-size: 0.95rem;
-  color:var(--bs-text);
+  color: var(--bs-text);
 }
 
 /* Contact Section */
@@ -635,13 +670,11 @@ header {
   text-decoration: underline;
 }
 
-@media (max-witdh:600px) {
+@media (max-width:600px) {
   .contact a{
-    font-size: 11px;
+    font-size: 14px;
   }
 }
-
-
 
 .contact-form {
   background-color: var(--bs-body-bg);
@@ -656,7 +689,10 @@ header {
 .contact-form .form-control {
   background-color: var(--bs-body-bg);
   color: var(--bs-text);
-  border: 1px solid var(--bs-border-color);
+  border: 1px solid rgba(128, 128, 128, 0.308);
+  border-top: none;
+  border-right: none;
+  border-left: none;
 }
 
 .contact-form .form-control::placeholder {
@@ -667,6 +703,5 @@ header {
   background-color: var(--bs-body-bg);
   color: var(--bs-text);
   box-shadow: none;
-  border-color: var(--bs-primary);
+  border-color: #12d83396;
 }
-
