@@ -1,3 +1,5 @@
+
+
 /* 1. Global Theme Variables */
 :root {
   --bs-primary: #2ec948;
@@ -14,7 +16,6 @@
   --bs-body-bg: #ecfdf5;
   --bs-text: #1c1917b1;
   --bs-box-shadow-navbar: 0 4px 30px rgba(0, 0, 0, 0.25);
-
   --bs-categories-program: #15ff0069;
 }
 
@@ -224,7 +225,7 @@ span.title-name {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 10px;
+  border-radius: 20px !important ;
   border: 1px solid #12d833;
 }
 .card-tool {
@@ -875,10 +876,12 @@ span.title-name {
 /* ---footer---- */
 
 .footer {
-  background-color: var(--bg-hover);
-  color: var(--bs-btn-text-hover);
+  background: radial-gradient(circle at top, #007a2f, #011e06);
+  color: #12d833 !important;
   font-family: var(--font-family-base);
   box-shadow: var(--bs-box-shadow);
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
 }
 
 .footer h3 {
@@ -886,7 +889,8 @@ span.title-name {
 }
 
 .footer p {
-  color: var(--bs-text);
+  color: #ecfdf5 !important;
+  font-size: 1rem;
 }
 
 .footer-links li {
@@ -894,7 +898,7 @@ span.title-name {
 }
 
 .footer-links a {
-  color: var(--bs-text);
+  color: #ecfdf5 !important;
   text-decoration: none;
   font-size: 1rem;
   transition: 0.3s;
@@ -908,7 +912,7 @@ span.title-name {
 }
 
 .footer-social .social-icon {
-  color: var(--bs-text);
+  color: #ecfdf5;
   font-size: 1.5rem;
   transition: 0.3s ease;
 }
