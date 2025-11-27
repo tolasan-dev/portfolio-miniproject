@@ -1,13 +1,13 @@
 [data-bs-theme="light"] {
   --bs-body-bg-animation-h: rgba(255, 255, 255, 0.2);
   --bs-body-bg-animation-v: rgba(255, 255, 255, 0.2);
-  --bs-point-bg:rgb(0, 0, 0);
+  --bs-point-bg: rgb(0, 0, 0);
 }
 
 [data-bs-theme="dark"] {
   --bs-body-bg-animation-h: rgba(255, 255, 255, 0.03);
   --bs-body-bg-animation-v: rgba(255, 255, 255, 0.02);
-  --bs-point-bg:white;
+  --bs-point-bg: white;
 }
 
 .gradient-background {
@@ -69,7 +69,11 @@
       var(--bs-body-bg-animation-h) 1px,
       transparent 1px
     ),
-    linear-gradient(to bottom, var(--bs-body-bg-animation-v) 1px, transparent 1px);
+    linear-gradient(
+      to bottom,
+      var(--bs-body-bg-animation-v) 1px,
+      transparent 1px
+    );
   z-index: 2;
 }
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio-G12</title>
+    <title>Portfolio</title>
     <!-- link framework csss bootstrap lasted version -->
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <!-- link style css  -->
@@ -144,7 +144,7 @@
 
                   <div class="social-icons d-flex gap-3">
                     <a
-                      href="https://github.com/yourusername"
+                      href="https://github.com/tolasan-dev"
                       target="_blank"
                       class="icon github"
                       title="GitHub"
@@ -152,7 +152,7 @@
                       <i class="fab fa-github fa-lg"></i>
                     </a>
                     <a
-                      href="https://linkedin.com/in/yourusername"
+                      href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
                       target="_blank"
                       class="icon linkedin"
                       title="LinkedIn"
@@ -160,7 +160,7 @@
                       <i class="fab fa-linkedin-in fa-lg"></i>
                     </a>
                     <a
-                      href="https://twitter.com/yourusername"
+                      href="https://x.com/TolaSan359977"
                       target="_blank"
                       class="icon twitter"
                       title="Twitter/X"
@@ -177,7 +177,7 @@
               <div class="text-center text-lg-end mt-5 py-5">
                 <div class="image-hero">
                   <img
-                    src="assets/img/profile-st.jpg"
+                    src="assets/img/hero-banner.jpg"
                     alt="Jacob Thorn"
                     class="img-fluid"
                     data-aos="fade-left"
@@ -388,9 +388,9 @@
               </div>
               <div class="mx-0 mx-lg-2 mx-xl-5">
                 <img
-                  src="assets/img/jacob-thornton.jpg"
+                  src="assets/img/hero-banner.jpg"
                   alt
-                  class="img-fluid rounded-3 position-relative"
+                  class="img-fluid rounded-4 position-relative"
                 />
               </div>
             </div>
@@ -414,14 +414,17 @@
                 projects. Eager to contribute to a dynamic team and grow in the
                 field of web and UI/UX design.
               </p>
-              <a href="#" class="btn"
-                >Show CV<i class="fa-solid fa-circle-right ps-lg-3"></i
+              <a href="#" class="btn rounded-pill"
+                >Show CV<i
+                  class="fa-solid fa-circle-right ps-lg-3 rounded-pill"
+                ></i
               ></a>
             </div>
           </div>
         </div>
       </section>
       <!-- end section about me -->
+
       <!-- section portfolio  -->
       <section id="portfolio-area" class="portfolio-area mt-5 mb-5">
         <div class="section-header mb-5 text-center" data-aos="fade-up">
@@ -1324,7 +1327,7 @@
           <div class="row gy-5 gy-md-5 gx-0 gx-md-3 g-lg-5">
             <!-- contact info -->
             <div class="col-12 col-lg-4" data-aos="fade-up">
-              <div class="contact-info p-4 rounded h-100">
+              <div class="contact-info p-4 rounded-4 h-100">
                 <h4 class="import-color mb-3">Contact Me</h4>
                 <h2 class="fw-bold">
                   GET IN TOUCH <span class="import-color fs-2">TODAY</span>
@@ -1401,7 +1404,7 @@
 
             <!-- contact form -->
             <div class="col-12 col-lg-8" data-aos="fade-up">
-              <div class="contact-form p-4 rounded shadow">
+              <div class="contact-form p-4 rounded-4 shadow">
                 <h3 class="mb-4">LET'S CONNECT!</h3>
                 <form>
                   <div class="row mb-3">
@@ -1445,7 +1448,11 @@
                       placeholder="Message"
                     ></textarea>
                   </div>
-                  <button type="submit" class="btn" onclick="netification()">
+                  <button
+                    type="submit"
+                    class="btn rounded-pill"
+                    onclick="netification()"
+                  >
                     SUBMIT NOW
                   </button>
                 </form>
@@ -1457,13 +1464,13 @@
       <!-- end section contact -->
     </main>
 
-    <footer class="footer text-light py-5">
+    <footer class="footer text-light py-5 bg-dark">
       <div class="container">
         <div class="row">
           <!-- Column 1: Logo / Team -->
           <div class="col-md-4 mb-4 text-center text-md-start">
             <h3 class="mb-2">
-              <i class="bi bi-people-fill me-2"></i>Group Team 12
+              <i class="bi bi-people-fill me-2"></i>My Profile
             </h3>
             <p class="mb-1">
               <i class="bi bi-person-circle me-2 fs-1 fw-bold"></i>Jacob
@@ -1473,7 +1480,7 @@
 
           <div class="col-md-4 mb-4 text-center">
             <h5 class="text-uppercase text-accent mb-3">Quick Links</h5>
-            <ul class="list-unstyled footer-links">
+            <ul class="list-unstyled footer-links d-flex">
               <li>
                 <a href="#"><i class="bi bi-house-door-fill me-2"></i>Home</a>
               </li>
@@ -1524,233 +1531,26 @@
   <!-- Theme Toggle Script -->
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <!-- swiper library -->
-
   <!-- js for handle counter  -->
-  <script>
-    const counters = document.querySelectorAll(".counter");
-    const speed = 24;
-    counters.forEach((counter) => {
-      const updateCount = () => {
-        const target = parseInt(counter.getAttribute("data-count"));
-        const count = parseInt(counter.innerText);
-        const increment = Math.trunc(target / speed);
-        if (count < target) {
-          counter.innerText = count + increment;
-          setTimeout(updateCount, 50);
-          /* change duration speed */
-          clearTimeout();
-        } else {
-          counter.innerText = target;
-        }
-      };
-      updateCount();
-    });
-  </script>
+  <script src="./assets/js/counterFunction.js"></script>
+
   <!-- js for handle mode ----- -->
-  <script>
-    const htmlEl = document.documentElement;
-    const iconMobile = document.getElementById("themeIconMobile");
-    const iconDesktop = document.getElementById("themeIconDesktop");
-    const btnMobile = document.getElementById("themeToggleBtnMobile");
-    const btnDesktop = document.getElementById("themeToggleBtnDesktop");
+  <script src="./assets/js/themeMode.js"></script>
 
-    const saved = localStorage.getItem("bsTheme");
-    if (saved) {
-      htmlEl.setAttribute("data-bs-theme", saved);
-      const iconClass = saved === "dark" ? "fas fa-sun" : "fas fa-moon";
-      iconMobile.className = iconClass;
-      iconDesktop.className = iconClass;
-    }
-
-    function toggleTheme() {
-      const current = htmlEl.getAttribute("data-bs-theme");
-      const next = current === "light" ? "dark" : "light";
-      htmlEl.setAttribute("data-bs-theme", next);
-      localStorage.setItem("bsTheme", next);
-      const iconClass = next === "dark" ? "fas fa-sun" : "fas fa-moon";
-      iconMobile.className = iconClass;
-      iconDesktop.className = iconClass;
-    }
-
-    btnMobile.addEventListener("click", toggleTheme);
-    btnDesktop.addEventListener("click", toggleTheme);
-  </script>
   <!-- script handle aos animation-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- js card skill  -->
+  <script src="./assets/js/skillFunction.js"></script>
+  <!-- js resume timeline -->
+  <script src="./assets/js/Timeline.js"></script>
+
+  <!-- btn-contact -->
+  <script src="./assets/js/contactFunction.js"></script>
   <script>
     AOS.init({
       once: true,
       duration: 600,
     });
-  </script>
-  <!-- js card skill  -->
-  <script>
-    const cards = document.querySelectorAll(".skill-card");
-
-    function setProgressWidth(card, widthPercent) {
-      const progressBar = card.querySelector(".progress-bg");
-      progressBar.style.width = widthPercent + "%";
-    }
-
-    cards.forEach((card) => {
-      const progressBar = card.querySelector(".progress-bg");
-      const percent = parseInt(card.getAttribute("data-percent")) || 90;
-      const skillPercentText = card.querySelector(".skill-percent");
-
-      progressBar.style.width = "0";
-      skillPercentText.style.opacity = "0";
-
-      card.addEventListener("click", () => {
-        if (window.innerWidth < 992) {
-          card.classList.toggle("active");
-          if (card.classList.contains("active")) {
-            setProgressWidth(card, percent);
-            skillPercentText.style.opacity = "1";
-          } else {
-            setProgressWidth(card, 0);
-            skillPercentText.style.opacity = "0";
-          }
-        }
-      });
-
-      card.addEventListener("mouseenter", () => {
-        if (window.innerWidth >= 992) {
-          setProgressWidth(card, percent);
-          skillPercentText.style.opacity = "1";
-        }
-      });
-
-      card.addEventListener("mouseleave", () => {
-        if (window.innerWidth >= 992) {
-          setProgressWidth(card, 0);
-          skillPercentText.style.opacity = "0";
-        }
-      });
-
-      window.addEventListener("resize", () => {
-        if (window.innerWidth >= 992) {
-          cards.forEach((c) => {
-            c.classList.remove("active");
-            setProgressWidth(c, 0);
-            c.querySelector(".skill-percent").style.opacity = "0";
-          });
-        } else {
-          cards.forEach((c) => {
-            if (c.classList.contains("active")) {
-              const p = parseInt(c.getAttribute("data-percent")) || 90;
-              setProgressWidth(c, p);
-              c.querySelector(".skill-percent").style.opacity = "1";
-            } else {
-              setProgressWidth(c, 0);
-              c.querySelector(".skill-percent").style.opacity = "0";
-            }
-          });
-        }
-      });
-    });
-  </script>
-  <!-- js resume timeline -->
-  <script>
-    function showitemText(index) {
-      const timelineItems = document.querySelectorAll(".timeline-item");
-      const item = timelineItems[index - 1];
-
-      if (!item) return;
-
-      const text = item.querySelector(".timeline-text");
-      const viewBtn = item.querySelector('button[onclick^="showitemText"]');
-
-      if (text && viewBtn) {
-        text.style.display = "block";
-        viewBtn.style.display = "none";
-      }
-    }
-
-    function closeText(index) {
-      const timelineItems = document.querySelectorAll(".timeline-item");
-      const item = timelineItems[index - 1];
-
-      if (!item) return;
-
-      const text = item.querySelector(".timeline-text");
-      const viewBtn = item.querySelector('button[onclick^="showitemText"]');
-
-      if (text && viewBtn) {
-        text.style.display = "none";
-        viewBtn.style.display = "inline-block";
-      }
-    }
-  </script>
-  <!-- btn-contact -->
-  <script>
-    function netification() {
-      // Create overlay container
-      const overlay = document.createElement("div");
-      Object.assign(overlay.style, {
-        position: "fixed",
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        backgroundColor: "rgba(0,0,0,0.4)",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        zIndex: 9999,
-        animation: "fadeInOverlay 0.3s ease forwards",
-      });
-
-      // Create notification box
-      const box = document.createElement("div");
-      box.textContent = "Your message was sent to me. Thank you 🙏❤️";
-      Object.assign(box.style, {
-        backgroundColor: "#12d833",
-        color: "white",
-        fontSize: "1.2rem",
-        padding: "1.5rem 2rem",
-        borderRadius: "12px",
-        boxShadow: "0 6px 12px rgba(18, 216, 51, 0.5)",
-        textAlign: "center",
-        maxWidth: "90%",
-        transform: "scale(0.8)",
-        opacity: "0",
-        animation: "fadeInScale 0.3s ease forwards",
-      });
-
-      overlay.appendChild(box);
-      document.body.appendChild(overlay);
-
-      // Remove notification after 3 seconds with fade out
-      setTimeout(() => {
-        box.style.animation = "fadeOutScale 0.3s ease forwards";
-        overlay.style.animation = "fadeOutOverlay 0.3s ease forwards";
-
-        overlay.addEventListener(
-          "animationend",
-          () => {
-            document.body.removeChild(overlay);
-          },
-          { once: true }
-        );
-      }, 3000);
-    }
-
-    // Add keyframes dynamically
-    const styleSheet = document.createElement("style");
-    styleSheet.textContent = `
-  @keyframes fadeInScale {
-    to {opacity: 1; transform: scale(1);}
-  }
-  @keyframes fadeOutScale {
-    to {opacity: 0; transform: scale(0.8);}
-  }
-  @keyframes fadeInOverlay {
-    to {opacity: 1;}
-  }
-  @keyframes fadeOutOverlay {
-    to {opacity: 0;}
-  }
-`;
-    document.head.appendChild(styleSheet);
   </script>
 </html>
